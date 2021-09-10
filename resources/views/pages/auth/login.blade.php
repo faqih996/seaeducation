@@ -1,15 +1,15 @@
 @extends('layouts.auth')
 
-@section('title')
-    Login
-@endsection
+@section('title', 'Login')
 
 @section('content')
 
 <div class="col-xxl-5 auth col-lg-6 my-auto py-lg-0 pt-lg-50 pb-lg-50 pt-30 pb-47 px-0">
             <div class="col-lg-6 offset-lg-8">
               <div class="auth-logo">
-                  <img src="frontend/assets/logosea.png" alt="">
+                <a class="navbar-brand align-self-center" href="{{ route('home') }}">
+                    <img src="frontend/assets/logosea.png" alt="">
+                </a>
               </div>
 
             <div class="auth-title">

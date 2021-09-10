@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
-@section('title')
-    Sea Education
-@endsection
+@section('title', 'Sea Education')
 
 @section('content')
 
@@ -27,7 +25,7 @@
           </p>
 
           <div class="text-left my-5">
-            <a class="btn btn-register-now" href="#" role="button"
+            <a class="btn btn-register-now" href="{{ route('register') }}" role="button"
               >Daftar Sekarang</a
             >
           </div>
@@ -36,7 +34,7 @@
 
       <!--kanan-->
       <section class="col img-kanan d-none d-sm-block d-sm-none d-md-block">
-        <img src="frontend/assets/kapal.jpg" alt="" />
+        <img src="{{ url('frontend/assets/kapal.jpg') }}" alt="" />
       </section>
     </div>
   </div>
@@ -58,7 +56,7 @@
           <div class="col-sm-2 col-md-4">
             <div class="card service-card">
               <div class="service-card__img">
-                <img src="frontend/assets/cash.png" alt=""  />
+                <img src="{{ url('frontend/assets/cash.png') }}" alt=""  />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Gajian Dollar/Euro</h5>
@@ -72,7 +70,7 @@
           <div class="col-sm-2 col-md-4">
             <div class="card service-card">
               <div class="service-card__img">
-                <img src="frontend/assets/hotel.png" alt="" />
+                <img src="{{ url('frontend/assets/hotel.png') }}" alt="" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Free Akomodasi</h5>
@@ -86,7 +84,7 @@
           <div class="col-sm-2 col-md-4">
             <div class="card service-card">
               <div class="service-card__img">
-                <img src="frontend/assets/travel.png" alt="" />
+                <img src="{{ url('frontend/assets/travel.png') }}" alt="" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Keliling Dunia</h5>
@@ -100,7 +98,7 @@
           <div class="col-sm-2 col-md-4">
             <div class="card service-card">
               <div class="service-card__img">
-                <img src="frontend/assets/study.png" alt="" />
+                <img src="{{ url('frontend/assets/study.png') }}" alt="" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Minimal Pendidikan</h5>
@@ -114,7 +112,7 @@
           <div class="col-sm-2 col-md-4">
             <div class="card service-card">
               <div class="service-card__img">
-                <img src="frontend/assets/career.png" alt="" />
+                <img src="{{ url('frontend/assets/career.png') }}" alt="" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Karir</h5>
@@ -133,7 +131,7 @@
 <!--daftarsekarang-->
         <section class="daftarsekarang">
           <div class="text-align-center my-5">
-            <a class="btn btn-register-now" href="#" role="button"
+            <a class="btn btn-register-now" href="{{ route('register') }}" role="button"
               >Daftar Sekarang</a
             >
           </div>
@@ -157,7 +155,7 @@
     <div class="col-md-2 col-md-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="frontend/assets/mentor.png" alt="" />
+          <img src="{{ url('frontend/assets/mentor.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Mentor Professional </h5>
@@ -171,7 +169,7 @@
     <div class="col-md-2 col-md-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="frontend/assets/consultancy.png" alt="" />
+          <img src="{{ url('frontend/assets/consultancy.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Mentor Professional </h5>
@@ -185,7 +183,7 @@
     <div class="col-sm-2 col-sm-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="frontend/assets/certificate.png" alt="" />
+          <img src="{{ url('frontend/assets/certificate.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Mentor Professional </h5>
@@ -199,7 +197,7 @@
     <div class="col-sm-2 col-sm-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="frontend/assets/hotel.png" alt="" />
+          <img src="{{ url('frontend/assets/hotel.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Mentor Professional </h5>
@@ -213,7 +211,7 @@
     <div class="col-sm-2 col-sm-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="frontend/assets/hiring.png" alt="" />
+          <img src="{{ url('frontend/assets/hiring.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Mentor Professional </h5>
@@ -227,7 +225,7 @@
     <div class="col-sm-2 col-sm-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="frontend/assets/document.png" alt="" />
+          <img src="{{ url('frontend/assets/document.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Mentor Professional </h5>
@@ -254,8 +252,8 @@
         </p>
       </div>
       <div class="col-md-8 text-center">
-        <img src="frontend/assets/logosas.png" class="img-patner" />
-        <img src="frontend/assets/LMjkt.png" class="img-patner" />
+        <img src="{{ url('frontend/assets/logosas.png') }}" class="img-patner" />
+        <img src="{{ url('frontend/assets/LMjkt.png') }}" class="img-patner" />
       </div>
     </div>
   </div>
@@ -280,7 +278,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="testi-item">
-                      <div class="testi-avatar"><img src="frontend/assets/7.jpg"></div>
+                      <div class="testi-avatar"><img src="{{ url('frontend/assets/7.jpg') }}"></div>
                       <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                       <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -304,7 +302,7 @@
                           <!--second--->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/8.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/8.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -324,11 +322,11 @@
                                   <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
                               </div>
                           </div>
-                          <!--third-->
 
+                          <!--third-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/9.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/9.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -352,7 +350,7 @@
                           <!--nine-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/14.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/14.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -376,7 +374,7 @@
                           <!--ten-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/15.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/15.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -400,7 +398,7 @@
                           <!--eleven-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/16.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/16.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -424,7 +422,7 @@
                           <!--fourth-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/11.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/11.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -449,7 +447,7 @@
                           <!--seven-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/12.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/12.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -474,7 +472,7 @@
                           <!--eight-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="frontend/assets/13.jpg"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/13.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -513,7 +511,7 @@
         <section class="daftarsekarang2">
           <div class="text-align-center">
             <h3>Siap Kemudikan Masa Depanmu?</h3>
-            <a class="btn btn-register-now" href="#" role="button"
+            <a class="btn btn-register-now" href="{{ route('register') }}" role="button"
               >Daftar Sekarang</a
             >
           </div>

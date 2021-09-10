@@ -163,11 +163,11 @@
   </section>
 </main>
 @endsection
-  
+
 @push('prepend-style')
     <link rel="stylesheet" href="{{ url('frontend/libraries/xzoom/xzoom.css') }}" />
 @endpush
-  
+
 @push('addon-script')
     <script src="{{ url('frontend/libraries/xzoom/xzoom.min.js') }}"></script>
     <script>

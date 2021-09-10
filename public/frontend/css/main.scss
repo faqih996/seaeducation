@@ -16,6 +16,11 @@ body {
     font-weight: bold;
 }
 
+a.nav-link {
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
 .navbar-light .navbar-brand {
     color: #1a3475;
 }
@@ -227,7 +232,7 @@ body {
     }
 
     img {
-        width: 150px;
+        width: 200px;
         margin-top: -40px;
     }
 }
@@ -439,6 +444,222 @@ body {
     }
 }
 
+.dropdown-menu.show {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+//detailpage
+
+.section-details-header {
+    min-height: 310px;
+    background: #e4e6eb;
+}
+
+.section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .breadcrumb-item {
+        &.active {
+            font-weight: bold;
+            color: #071c4d;
+        }
+    }
+
+    .card-details {
+        padding: 30px;
+        border-radius: 11px;
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #b1b1b1;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-size: 14px;
+            color: #071c4d;
+        }
+
+        .trip-informations {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+                color: #071c4d;
+            }
+
+            td {
+                font-weight: 300;
+                font-size: 18px;
+                color: #b1b1b1;
+            }
+
+            .text-blue {
+                color: #071c4d;
+                font-weight: bold;
+            }
+
+            .text-orange {
+                color: #ff9e53;
+                font-weight: bold;
+            }
+        }
+
+        .payment-instructions {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+
+        .bank {
+            .bank-item {
+                h3 {
+                    font-size: 18px;
+                    color: #071c4d;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .description {
+                    margin-left: 10px;
+                    overflow: hidden;
+                    float: left;
+
+                    p {
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #071c4d;
+                    }
+                }
+            }
+
+            .bank-image {
+                width: 45px;
+                height: 45px;
+                float: left;
+            }
+        }
+
+        .disclaimer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+
+        .gj-datepicker {
+            .datepicker {
+                border-right: 0;
+            }
+
+            .input-group-append {
+                .btn {
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        .btn-add-now {
+            background-color: #071c4d;
+            color: #fff;
+
+            &:hover {
+                background-color: #1b3b86;
+                color: #fff;
+            }
+        }
+    }
+
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+    }
+
+    .features {
+        margin-top: 20px;
+
+        h3 {
+            font-size: 18px;
+            color: #071c4d;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .description {
+            margin-left: 10px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .features-image {
+            width: 45px;
+            height: 45px;
+            float: left;
+        }
+    }
+
+    .gallery {
+        .xzoom-container {
+            display: block;
+
+            .xzoom {
+                width: 100%;
+                box-shadow: none;
+                margin-bottom: 10px;
+            }
+
+            .xactive {
+                border: 4px solid #1abc9c;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .member {
+        .member-image {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .join-container {
+        margin-top: -16px;
+    }
+
+    .btn-join-now {
+        background-color: #ff9e53;
+        color: #fff;
+        border-radius: 0;
+
+        &:hover {
+            background-color: #ffb57c;
+            color: #fff;
+        }
+    }
+}
+
 @mixin at2x($path, $ext: "jpg, svg, png", $w: auto, $h: auto) {
     $at1x_path: "#{$path}.#{$ext}";
     $at2x_path: "#{$path}@2x.#{$ext}";
@@ -452,10 +673,4 @@ body {
         background-image: url("#{$at2x_path}");
         background-size: #{$w}px #{$h}px;
     }
-}
-
-.dropdown-menu.show {
-    margin: 20px;
-    border-radius: 10px;
-    padding: 25px;
 }
