@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mt-5,
+.my-5 {
+  margin-top: 1rem !important;
+}
+
+.btn-primary {
+  background: #2447f9;
+  color: #fff;
+  font-size: 16px;
+  padding: 11px 42px;
+  border-radius: 100px;
+  border: 0;
+  font-weight: 500;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 250px;
+}
+
+.btn-primary:hover {
+  background: #0625c2;
+  border: 0;
+}
+
+.btn-secondary {
+  background: #f0efef;
+  border: 1px solid #bcd0e5;
+  padding: 11px 42px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #173a56;
+  border-radius: 100px;
+  border: 1px;
+  font-weight: 500;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.btn-secondary:hover {
+  background: #cbced1;
+  color: #173a56;
+}
+
+.showcase {
+  background-color: blue;
+  background-position: cover;
+}
+
+.auth-logo {
+  padding: 30px 0px;
+}
+
+.auth-logo img {
+  height: 90px;
+}
+
+.auth h4 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #071c4d;
+  font-size: 26px;
+}
+
+.auth p {
+  font-family: "Open Sans";
+  font-weight: 800px;
+  font-size: 16px;
+  color: #4d4e4e;
+}
+
+.input-label {
+  padding: 1px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #071c4d;
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+.input-field {
+  border-radius: 100px;
+  background: #e5e9f2;
+  border: 0px;
+  height: 45px;
+  padding: 20px;
+  width: 250px;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.forget-password a {
+  background: none;
+  font-size: 16px;
+  color: #a7a9aa;
+  text-decoration: none;
+  padding: 2px;
+  float: right;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    width: 330px;
+  }
+  .input-field {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    width: 330px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
