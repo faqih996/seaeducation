@@ -305,7 +305,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="testi-item">
-                      <div class="testi-avatar"><img src="{{ url('frontend/assets/7.jpg') }}"></div>
+                      <div class="testi-avatar"><img src="{{ url('frontend/assets/7@2x.jpg') }}"></div>
                       <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                       <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -329,7 +329,7 @@
                           <!--second--->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/8.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/8@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -353,7 +353,7 @@
                           <!--third-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/9.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/9@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -377,7 +377,7 @@
                           <!--nine-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/14.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/14@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -401,7 +401,7 @@
                           <!--ten-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/15.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/15@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -425,7 +425,7 @@
                           <!--eleven-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/16.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/16@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -449,7 +449,7 @@
                           <!--fourth-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/11.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/11@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -474,7 +474,7 @@
                           <!--seven-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/12.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/12@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">
@@ -499,7 +499,7 @@
                           <!--eight-->
                           <div class="swiper-slide">
                               <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/13.jpg') }}"></div>
+                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/13@2x.jpg') }}"></div>
                                   <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
                                   <div class="testimonials-text">
                                       <div class="listing-rating">

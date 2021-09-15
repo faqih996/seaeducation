@@ -4,13 +4,12 @@
     <div class="container-fluid">
       <a class="navbar-brand align-self-center" href="{{ route('home') }}">
         <img
-          src="{{ url('frontend/assets/logosea@2x.png') }}"
+          src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
           alt=""
-          width="100x"
-          height="90px"
+          width=""
+          height=""
           class="d-inline-block align-self-center"
         />
-        SEAEDUCATION
       </a>
       <button
         class="navbar-toggler"

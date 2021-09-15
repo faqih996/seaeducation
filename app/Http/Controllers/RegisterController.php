@@ -24,12 +24,17 @@ class RegisterController extends Controller
             'name' => 'required|max:225',
             'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5|max:255',
-            'repeatpassword' => 'required|min:5|max:255'
+
         ]);
 
+
+        $alidatedData['name'] = $request->name;
+        $alidatedData['email'] = $request->email;
         //hash password
         $validatedData['password'] = Hash::make($validatedData['password']);
 
-        User::create($validatedData);
+        User::insert($validatedData);
+
+        return redirect('register/register');
     }
 }
