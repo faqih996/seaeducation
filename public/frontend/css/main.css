@@ -22,6 +22,7 @@ a.nav-link {
 
 .navbar-light .navbar-brand {
   color: #1a3475;
+  font-size: 40px;
 }
 
 .navbar-collapse {
@@ -231,8 +232,7 @@ a.nav-link {
 }
 
 .section-networks img {
-  width: 200px;
-  margin-top: -40px;
+  size: 400px;
 }
 
 .testimonial {

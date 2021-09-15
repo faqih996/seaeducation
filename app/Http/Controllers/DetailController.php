@@ -8,6 +8,9 @@ class DetailController extends Controller
 {
     public function index(request $request)
     {
-        return view('pages.detail');
+        return view('pages.detail', [
+            'title' => 'Register',
+            'active' => 'register'
+        ]);
     }
 }

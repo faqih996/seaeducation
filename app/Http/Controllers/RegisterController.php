@@ -11,7 +11,10 @@ class RegisterController extends Controller
 {
     public function index(request $request)
     {
-        return view('pages.auth.register');
+        return view('pages.register.register',[
+            'title' => 'Register',
+            'active' => 'register'
+        ]);
     }
 
     public function store(request $request)
@@ -20,7 +23,8 @@ class RegisterController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:225',
             'email' => 'required|email:dns|unique:users',
-            'password' => 'required|min:5|max:255'
+            'password' => 'required|min:5|max:255',
+            'repeatpassword' => 'required|min:5|max:255'
         ]);
 
         //hash password

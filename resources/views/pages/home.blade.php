@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Sea Education')
 
 @section('content')
 
@@ -240,24 +239,52 @@
 <!--apa itu sea education end-->
 
 <!--partner-->
-  <section class="section-networks" id="networks">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Perusahaan Rekanan</h2>
-        <p>
-          Bekerja sama dengan Hotel
-          <br />
-          dan Agency terbaik di Indonesia & Dunia
-        </p>
-      </div>
-      <div class="col-md-8 text-center">
-        <img src="{{ url('frontend/assets/logosas.png') }}" class="img-patner" />
-        <img src="{{ url('frontend/assets/LMjkt.png') }}" class="img-patner" />
-      </div>
+<section class="section-networks" id="networks">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Perusahaan Rekanan</h2>
+                <p>
+                Bekerja sama dengan Hotel
+                <br />
+                dan Agency terbaik di Indonesia & Dunia
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Perusahaan Rekanan</h2>
+                <p>
+                Bekerja sama dengan Hotel
+                <br />
+                dan Agency terbaik di Indonesia & Dunia
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Perusahaan Rekanan</h2>
+                <p>
+                Bekerja sama dengan Hotel
+                <br />
+                dan Agency terbaik di Indonesia & Dunia
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-  </section>
+</section>
+
+<section class="section-networks align-self-center">
+    <div class="container align-content-center">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
+            </div>
+            <div class="col-md-4">
+                <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
+            </div>
+            <div class="col-md-4">
+                <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
+            </div>
+        </div>
+    </div>
+</section>
 <!--partnerend-->
 
 <!--testimoni-->

@@ -8,6 +8,9 @@ class LoginController extends Controller
 {
     public function index(request $request)
     {
-        return view('pages.auth.login');
+        return view('pages.login.login',[
+            'title' => 'Login',
+            'active' => 'login'
+        ]);
     }
 }

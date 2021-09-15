@@ -31,7 +31,7 @@ Route::get('/register',
 
 Route::post('/register',
     [RegisterController::class,'store']
-)->name('register');
+);
 
 Route::get('/login',
     [LoginController::class,'index']

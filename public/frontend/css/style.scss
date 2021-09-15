@@ -78,7 +78,12 @@ body {
     color: #4d4e4e;
 }
 
-.input-label {
+.form-floating {
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+
+.floatingInput {
     padding: 1px;
     font-family: "Open Sans";
     font-weight: bold;
@@ -87,15 +92,12 @@ body {
     margin-bottom: 3px;
 }
 
-.input-field {
+.form-control {
     border-radius: 100px;
-    background: #e5e9f2;
-    border: 0px;
-    height: 45px;
-    padding: 20px;
-    width: 250px;
-    font-family: "Open Sans";
-    font-size: 18px;
+}
+
+.button {
+    padding-top: 20px;
 }
 
 .forget-password {

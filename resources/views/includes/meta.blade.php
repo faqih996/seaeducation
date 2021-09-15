@@ -1,4 +1,6 @@
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="facebook-domain-verification" content="2jx1ct8d69nktwmn7ohy5ds352w2mv" />
     <meta content="" name="keywords">
     <meta content="" name="description">
