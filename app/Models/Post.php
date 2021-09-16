@@ -10,5 +10,5 @@ class post
             "title" => "detail",
             "slug" => "slug"
         ]
-    ]
+        ];
 };

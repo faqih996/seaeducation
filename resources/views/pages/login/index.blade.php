@@ -41,7 +41,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         @endif
-                        <a class="navbar-brand" href="{{ url('home') }}">
+                        <a class="navbar-brand" href="{{ url('/') }}">
                         <img
                             src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
                             alt=""

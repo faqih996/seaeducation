@@ -19,7 +19,7 @@
 
             <div class="container mx-auto">
               <div class="pb-50">
-                <a class="navbar-brand" href="{{ url('home') }}">
+                <a class="navbar-brand" href="{{ url('/') }}">
                   <img
                     src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
                     alt=""

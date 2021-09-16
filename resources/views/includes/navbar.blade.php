@@ -48,10 +48,27 @@
           <li class="nav-item align-self-center">
             <a class="nav-link " href="">Kelas</a>
           </li>
-          <a class="btn px-4 btn-secondary ml-5" href="{{ url('register') }}" role="button"
-            >Daftar</a
-          >
-          <a class="btn px-4 btn-login ml-2" href="{{ url('login') }}" role="button">Masuk</a>
+
+          <li>
+          @auth
+            <li class="nav-item align-self-center">
+                <a class="nav-link " href="">Dashboard</a>
+            </li>
+            <!-- daftar<a class="nav-link " href="">Welcome, //{/{ //auth()->user()->name }}</a>-->
+            <li>
+            <form action="/logout" method="post">
+                @csrf
+                <button class="btn px-4 btn-secondary ml-2" type="submit" role="button">Keluar</button>
+            </form>
+            </li>
+          @endauth
+
+          @guest
+            <a class="btn px-4 btn-secondary ml-5" href="{{ url('register') }}" role="button">Daftar</a>
+            <a class="btn px-4 btn-login ml-2" href="{{ url('login') }}" role="button">Masuk</a>
+          @endguest
+
+          </li>
         </ul>
       </div>
     </div>
