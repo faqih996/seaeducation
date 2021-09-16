@@ -2,7 +2,7 @@
 <div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-White">
     <div class="container-fluid">
-      <a class="navbar-brand align-self-center" href="{{ route('home') }}">
+      <a class="navbar-brand align-self-center" href="{{ url('home') }}">
         <img
           src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
           alt=""
@@ -48,10 +48,10 @@
           <li class="nav-item align-self-center">
             <a class="nav-link " href="">Kelas</a>
           </li>
-          <a class="btn px-4 btn-secondary ml-5" href="{{ route('register') }}" role="button"
+          <a class="btn px-4 btn-secondary ml-5" href="{{ url('register') }}" role="button"
             >Daftar</a
           >
-          <a class="btn px-4 btn-login ml-2" href="{{ route('login') }}" role="button">Masuk</a>
+          <a class="btn px-4 btn-login ml-2" href="{{ url('login') }}" role="button">Masuk</a>
         </ul>
       </div>
     </div>

@@ -11,7 +11,7 @@ class RegisterController extends Controller
 {
     public function index(request $request)
     {
-        return view('pages.register.register',[
+        return view('pages.register.index',[
             'title' => 'Register',
             'active' => 'register'
         ]);
@@ -19,6 +19,7 @@ class RegisterController extends Controller
 
     public function store(request $request)
     {
+
         //validasi data
         $validatedData = $request->validate([
             'name' => 'required|max:225',
@@ -28,13 +29,15 @@ class RegisterController extends Controller
         ]);
 
 
-        $alidatedData['name'] = $request->name;
-        $alidatedData['email'] = $request->email;
+
+        $validatedData['name'] = $request->name;
+        $validatedData['email'] = $request->email;
+
         //hash password
         $validatedData['password'] = Hash::make($validatedData['password']);
 
         User::insert($validatedData);
 
-        return redirect('register/register');
+        return redirect('index');
     }
 }

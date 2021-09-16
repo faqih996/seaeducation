@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-
 @section('content')
 
 <!--header-->
@@ -24,7 +23,7 @@
           </p>
 
           <div class="text-left my-5">
-            <a class="btn btn-register-now" href="{{ route('register') }}" role="button"
+            <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
               >Daftar Sekarang</a
             >
           </div>
@@ -130,7 +129,7 @@
 <!--daftarsekarang-->
         <section class="daftarsekarang">
           <div class="text-align-center my-5">
-            <a class="btn btn-register-now" href="{{ route('register') }}" role="button"
+            <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
               >Daftar Sekarang</a
             >
           </div>
@@ -538,7 +537,7 @@
         <section class="daftarsekarang2">
           <div class="text-align-center">
             <h3>Siap Kemudikan Masa Depanmu?</h3>
-            <a class="btn btn-register-now" href="{{ route('register') }}" role="button"
+            <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
               >Daftar Sekarang</a
             >
           </div>

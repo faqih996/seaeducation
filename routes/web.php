@@ -1,5 +1,6 @@
 <?php
 
+use App\models\post;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\HomeController;
@@ -17,22 +18,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',
-   [HomeController::class,'index']
-)->name('home');
+Route::get('/', function(){
+    return view('pages.home',[
+        "title" => "Home"
+    ]);
+});
 
-Route::get('/details',
-   [DetailController::class,'index']
-)->name('details');
+Route::get('/details', function(){
+    return view('pages.detail',[
+        "title" => "Details",
+        "post" => Post::all()
+    ]);
+});
 
-Route::get('/register',
-    [RegisterController::class,'index']
-)->name('register');
+Route::get('/register', [RegisterController::class,'index']);
 
-Route::post('/register',
-    [RegisterController::class,'store']
-);
+Route::post('/register', [RegisterController::class,'store']);
 
-Route::get('/login',
-    [LoginController::class,'index']
-)->name('login');
+Route::get('/login', [LoginController::class,'index']);
