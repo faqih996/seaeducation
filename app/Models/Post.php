@@ -7,8 +7,8 @@ class post
 {
     private static $blog_posts =[
         [
-            "title" => "detail"
+            "title" => "detail",
             "slug" => "slug"
         ]
     ]
-}
+};

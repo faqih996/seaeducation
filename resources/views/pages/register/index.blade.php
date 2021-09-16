@@ -64,14 +64,23 @@
                 >
                 <input
                   type="text"
-                  class="form-control rounded-pill text-lg"
+                  class="form-control rounded-pill text-lg @error('name') is-invalid @enderror"
+                  value="{{ old('name') }}"
                   id="text"
                   name="name"
                   aria-describedby="name"
                   placeholder="Enter your Full Name"
+                  required
                 />
+
+                @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
               </div>
-              <div class="pt-50">
+
+              <div class="pt-30">
                 <label
                   for="email"
                   class="form-label text-lg fw-medium color-palette-1 mb-10"
@@ -79,13 +88,21 @@
                 >
                 <input
                   type="email"
-                  class="form-control rounded-pill text-lg"
+                  class="form-control rounded-pill text-lg @error('email') is-invalid @enderror"
+                  value="{{ old('email') }}"
                   id="email"
                   name="email"
                   aria-describedby="email"
                   placeholder="Enter your email address"
+                  required
                 />
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
               </div>
+
               <div class="pt-30">
                 <label
                   for="password"
@@ -94,12 +111,19 @@
                 >
                 <input
                   type="password"
-                  class="form-control rounded-pill text-lg"
+                  class="form-control rounded-pill text-lg @error('password') is-invalid @enderror"
                   id="password"
                   name="password"
                   aria-describedby="password"
                   placeholder="Your password"
+                  required
                 />
+
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
               </div>
               <div class="button-group d-flex flex-column mx-auto pt-50">
                 <button

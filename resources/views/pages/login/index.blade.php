@@ -18,7 +18,15 @@
           <form action="">
             <div class="container mx-auto">
               <div class="pb-50">
-                <a class="navbar-brand" href="../index.html">
+
+                @if(session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
+                <a class="navbar-brand" href="{{ url('home') }}">
                   <img
                     src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
                     alt=""

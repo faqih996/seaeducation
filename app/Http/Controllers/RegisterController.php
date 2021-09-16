@@ -22,7 +22,7 @@ class RegisterController extends Controller
 
         //validasi data
         $validatedData = $request->validate([
-            'name' => 'required|max:225',
+            'name' => 'required|min:5|max:225',
             'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5|max:255',
 
@@ -38,6 +38,7 @@ class RegisterController extends Controller
 
         User::insert($validatedData);
 
-        return redirect('index');
+        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        return redirect('/login')->with('success', 'Registrasi berhasil! Silahkan Login');
     }
 }
