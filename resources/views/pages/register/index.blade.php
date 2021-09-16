@@ -137,7 +137,16 @@
                   button type="submit"
                   >Daftar</button
                 >
-                <!-- <button type="submit"
+
+                <h6 class="hal mt-3"> sudah punya akun?
+
+                    <a
+                        href="{{ url('/login') }}"
+                        role="button"
+                        >Masuk</a
+                    >
+
+                </h6><!-- <button type="submit"
                                 class="btn btn-sign-in fw-medium text-lg text-white rounded-pill mb-16"
                                 role="button">Continue to Sign In</button> -->
               </div>
