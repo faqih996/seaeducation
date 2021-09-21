@@ -38,4 +38,9 @@ Route::get('/login', [LoginController::class,'index'])->name('login')->middlewar
 Route::post('/login', [LoginController::class,'authenticate']);
 Route::post('/logout', [LoginController::class,'logout']);
 
-Route::get('/dashboard', [DashboardContoller::class,'index'])->name('dashboard')->middleware('auth');
+Route::get('/dashboard', function(){
+    return view('pages.dashboard.index',[
+        'title' => 'dashboard',
+        'active' => 'dashboard'
+]);
+})->middleware('auth');
