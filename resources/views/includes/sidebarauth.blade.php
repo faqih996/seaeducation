@@ -20,12 +20,12 @@
             alt=""
           />
           <h2 class="text-4xl fw-bold text-white mb-30">
-            Win the battle.<br />
-            Be the Champion.
+            Let's Navigate Your Futur<br />
+            with Sea Education.
           </h2>
           <p class="text-white m-0">
-            Kami menyediakan jutaan cara untuk<br />
-            membantu players menjadi<br />
-            pemenang sejati
+            Kami membantu kamu<br />
+            meraih mimpimu bekerja<br />
+            dan sukses di hotel & kapal pesiar
           </p>
         </div>
