@@ -1,12 +1,15 @@
 <?php
 
 use App\models\Post;
+use App\models\Program;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\DashboardContoller;
 use App\Http\Controllers\RegisterController;
+use PHPUnit\Framework\Constraint\RegularExpression;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,17 +22,16 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', function(){
-    return view('pages.home',[
-        "title" => "Home"
-    ]);
-})->name('login');
+Route::get('/', [HomeController::class,'index'])->name('home');
 
-Route::get('/details', function(){
-    return view('pages.detail',[
-        "title" => "Details"
-    ]);
-})->name('details');
+Route::get('/program', [ProgramController::class, 'index'])->name('Programs');
+Route::get('/program/{slug}', [ProgramController::class, 'show']);
+
+//Route::get('/details', function(){
+//   return view('pages.detail',[
+//        "title" => "Details"
+//    ]);
+//})->name('details');
 
 Route::get('/register', [RegisterController::class,'index'])->name('register')->middleware('guest');
 Route::post('/register', [RegisterController::class,'store']);
