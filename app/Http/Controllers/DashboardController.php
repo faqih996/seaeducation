@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Dashboard;
+use App\program;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -15,7 +16,7 @@ class DashboardController extends Controller
     public function index()
     {
         return view('dashboard.post.index', [
-            'post'post::where('user_id', auth()->user()->id)->get()
+            'programs'program::where('user_id', auth()->user()->id)->get()
 
         ]);
     }
