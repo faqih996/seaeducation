@@ -13,12 +13,17 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(request $request)
     {
-        return view('dashboard.post.index', [
-            'programs'program::where('user_id', auth()->user()->id)->get()
-
+        return view('pages.dashboard.index',[
+        'title' => 'dashboard',
+        'active' => 'dashboard'
         ]);
+
+        //return view('dashboard.post.index', [
+          //  'programs'program::where('user_id', auth()->user()->id)->get()
+
+        //]);
     }
 
     /**

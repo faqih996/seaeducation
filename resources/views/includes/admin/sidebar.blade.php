@@ -19,7 +19,7 @@
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="../member/overview.html" class="text-lg text-decoration-none">Overview</a>
+                            <a href="{{ url('dashboard') }}" class="text-lg text-decoration-none">Overview</a>
                         </p>
                     </div>
                     <div class="item mb-30">
@@ -35,7 +35,7 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-                            <a href="../member/transactions.html" class="text-lg text-decoration-none">Profile</a>
+                            <a href="{{ url('profile') }}" class="text-lg text-decoration-none">Profile</a>
                         </p>
                     </div>
                     <div class="item mb-30">
@@ -101,7 +101,7 @@
                             <a href="" class="text-lg text-decoration-none">Documents</a>
                         </p>
                     </div>
-                    <div class="item active mb-30">
+                    <div class="item mb-30">
                         <svg class="icon me-3" width="25" height="25" viewBox="0 0 25 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">

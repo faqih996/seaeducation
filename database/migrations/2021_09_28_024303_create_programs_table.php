@@ -16,11 +16,12 @@ class CreateProgramsTable extends Migration
         Schema::create('programs', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('title');
+            $table->string('slug');
             $table->text('excerpt');
             $table->text('body');
             $table->string('status');
-            $table->integer('batch_id');
-            $table->integer('department_id');
+            $table->foreignId('batch_id');
+            $table->foreignId('department_id');
             $table->timestamp('publish_at')->nullable();
             $table->timestamps('');
         });
