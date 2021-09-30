@@ -6,8 +6,8 @@
         <img
           src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
           alt=""
-          width="110px"
-          height="85px"
+          width=""
+          height=""
           class="d-inline-block align-self-center"
         />
       </a>
@@ -27,7 +27,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active align-self-center">
             <a class="nav-link " href=""
-              >Kampus kami <span class="sr-only"></span
+              >Dukungan <span class="sr-only"></span
             ></a>
           </li>
           <li class="nav-item align-self-center dropdown">
@@ -40,13 +40,13 @@
               Program
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="{{ url('/detail') }}">Regular</a>
-              <a class="dropdown-item" href="{{ url('/detail') }}">Executive</a>
-              <a class="dropdown-item" href="{{ url('/detail') }}">Sea Consultancy</a>
+              <a class="dropdown-item" href="">Regular</a>
+              <a class="dropdown-item" href="">Executive</a>
+              <a class="dropdown-item" href="">Sea Consultancy</a>
             </div>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link " href="">FAQ</a>
+            <a class="nav-link " href="">Kelas</a>
           </li>
 
           <li>
@@ -64,18 +64,11 @@
           @endauth
 
           @guest
-          <li>
-           <form>
-            <button class="btn px-4 btn-secondary ml-5" href="{{ url('register') }}" role="button">Daftar</button>
-           </form>
-        </li>
-        <form>
-        <li>
+            <a class="btn px-4 btn-secondary ml-5" href="{{ url('register') }}" role="button">Daftar</a>
             <a class="btn px-4 btn-login ml-2" href="{{ url('login') }}" role="button">Masuk</a>
-            </li>
-            </form>
           @endguest
 
+          </li>
         </ul>
       </div>
     </div>

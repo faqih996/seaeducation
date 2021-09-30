@@ -76,19 +76,17 @@ a.nav-link {
 }
 
 .btn-register-now {
-    background: #1a3475;
+    background: #ff9900;
     color: white;
-    border: 4px;
-    border-color: white;
+    border: 0;
     padding: 13px 17px 13px 17px;
     font-size: 18px;
     font-weight: bold;
 }
 
 .btn-register-now:hover {
-    background-color: #23459b;
+    background-color: #e68b03;
     border: 0;
-    color: white;
 }
 
 //header
@@ -453,6 +451,7 @@ a.nav-link {
 }
 
 //detailpage
+
 .section-details-header {
     min-height: 310px;
     background: #e4e6eb;
@@ -660,19 +659,18 @@ a.nav-link {
         }
     }
 }
+@mixin at2x($path, $ext: "jpg, svg, png", $w: auto, $h: auto) {
+    $at1x_path: "#{$path}.#{$ext}";
+    $at2x_path: "#{$path}@2x.#{$ext}";
 
-//programcss
-.program {
-    .program-card {
-        margin: 0px 40px 40px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 24px;
-        border-radius: 20px;
-        box-shadow: rgb(0 0 0 / 5%) 0px 5px 20px 0px;
-        background-color: rgb(255, 255, 255);
-        border: none;
+    background-image: url("#{$at1x_path}");
+
+    @media all and (-webkit-min-device-pixel-ratio: 1.5),
+        all and (-o-min-device-pixel-ratio: 3/2),
+        all and (min--moz-device-pixel-ratio: 1.5),
+        all and (min-device-pixel-ratio: 1.5) {
+        background-image: url("#{$at2x_path}");
+        background-size: #{$w}px #{$h}px;
     }
 }
 

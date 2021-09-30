@@ -9,7 +9,7 @@
                   <div class="col-12 col-lg-3">
                     <h3>Sea Education</h3>
                     <p>
-                        Sea education bertekad untuk mencetak sumberdaya manusia yang siap berkarir di dunia hospitality internasional sehingga siap menasuki dunia kerja.
+                        Sea education bertekad untuk mencetak sumberdaya manusia yang siap berkarir di dunia hospitality internasional sehingga siap nenasuki dunia kerja.
                     </p>
                   </div>
                   <div class="col-12 col-lg-3">

@@ -156,7 +156,7 @@
           <img src="{{ url('frontend/assets/mentor.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Mentor Professional </h5>
+          <h5 class="card-seaedu-title">Mentor Professional</h5>
           <p class="card-seatext">
             Mentor merupakan professional dan expert di bidangnya
           </p>
@@ -170,9 +170,9 @@
           <img src="{{ url('frontend/assets/consultancy.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Mentor Professional </h5>
+          <h5 class="card-seaedu-title">Free Konsultasi karir</h5>
           <p class="card-seatext">
-            Mentor merupakan professional dan expert di bidangnya
+            Berkonsulatsi karir dan peluang kerja tanpa khawatir dan ribet
           </p>
         </div>
       </div>
@@ -184,9 +184,9 @@
           <img src="{{ url('frontend/assets/certificate.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Mentor Professional </h5>
+          <h5 class="card-seaedu-title">Bersertifikat Resmi</h5>
           <p class="card-seatext">
-            Mentor merupakan professional dan expert di bidangnya
+            Selesaikan program pendidikan dan dapatkan sertifikat dari kami
           </p>
         </div>
       </div>
@@ -198,9 +198,9 @@
           <img src="{{ url('frontend/assets/hotel.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Mentor Professional </h5>
+          <h5 class="card-seaedu-title">Praktek Kerja</h5>
           <p class="card-seatext">
-            Mentor merupakan professional dan expert di bidangnya
+            Program Praktek langsung di Hotel dan Restaurant berbintang 4-5
           </p>
         </div>
       </div>
@@ -212,9 +212,9 @@
           <img src="{{ url('frontend/assets/hiring.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Mentor Professional </h5>
+          <h5 class="card-seaedu-title">Jaminan Kerja</h5>
           <p class="card-seatext">
-            Mentor merupakan professional dan expert di bidangnya
+            100% jaminan PASTI kerja dan Disalurkan secara TEPAT
           </p>
         </div>
       </div>
@@ -226,9 +226,9 @@
           <img src="{{ url('frontend/assets/document.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Mentor Professional </h5>
+          <h5 class="card-seaedu-title">FREE Dokumen Kepelautan</h5>
           <p class="card-seatext">
-            Mentor merupakan professional dan expert di bidangnya
+            Tak perlu khawatir dengan tambahan biaya pengurusan dokumen
           </p>
         </div>
       </div>
@@ -239,39 +239,28 @@
 
 <!--partner-->
 <section class="section-networks" id="networks">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Perusahaan Rekanan</h2>
-                <p>
-                Bekerja sama dengan Hotel
-                <br />
-                dan Agency terbaik di Indonesia & Dunia
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Perusahaan Rekanan</h2>
-                <p>
-                Bekerja sama dengan Hotel
-                <br />
-                dan Agency terbaik di Indonesia & Dunia
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Perusahaan Rekanan</h2>
-                <p>
-                Bekerja sama dengan Hotel
-                <br />
-                dan Agency terbaik di Indonesia & Dunia
-                </p>
+    <div class="container align-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Perusahaan Rekanan</h2>
+                    <p>
+                    Bekerja sama dengan Hotel
+                    <br />
+                    dan Agency terbaik di Indonesia & Dunia
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Perusahaan Rekanan</h2>
+                    <p>
+                    Bekerja sama dengan Hotel
+                    <br />
+                    dan Agency terbaik di Indonesia & Dunia
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
 
-<section class="section-networks align-self-center">
-    <div class="container align-content-center">
-        <div class="row">
             <div class="col-md-4">
                 <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
             </div>
@@ -285,6 +274,11 @@
     </div>
 </section>
 <!--partnerend-->
+
+<!--program-->
+
+<!--programend-->
+
 
 <!--testimoni-->
   <section class="testimonial">

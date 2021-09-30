@@ -9,6 +9,7 @@ use App\Http\Controllers\DetailController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+
 use PHPUnit\Framework\Constraint\RegularExpression;
 
 /*
@@ -41,3 +42,4 @@ Route::post('/login', [LoginController::class,'authenticate']);
 Route::post('/logout', [LoginController::class,'logout']);
 
 Route::get('/dashboard', [DashboardController::class,'index'])->name('Dashboard')->middleware('auth');
+

@@ -30,6 +30,7 @@
                         </svg>
 
                         <p class="item-title m-0">
+<<<<<<< HEAD
                             <a href="{{ url('profile') }}" class="text-lg text-decoration-none">Profile</a>
                         </p>
                     </div>
@@ -62,6 +63,8 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
+=======
+>>>>>>> parent of 71e970e (Edit Sidebar)
                             <a href="../member/transactions.html" class="text-lg text-decoration-none">Transactions</a>
                         </p>
                     </div>

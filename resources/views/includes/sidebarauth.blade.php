@@ -20,7 +20,7 @@
             alt=""
           />
           <h2 class="text-4xl fw-bold text-white mb-30">
-            Navigate Your Future<br />
+            Let's Navigate Your Futur<br />
             with Sea Education.
           </h2>
           <p class="text-white m-0">
