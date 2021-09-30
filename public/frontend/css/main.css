@@ -76,17 +76,19 @@ a.nav-link {
 }
 
 .btn-register-now {
-  background: #ff9900;
+  background: #1a3475;
   color: white;
-  border: 0;
+  border: 4px;
+  border-color: white;
   padding: 13px 17px 13px 17px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .btn-register-now:hover {
-  background-color: #e68b03;
+  background-color: #23459b;
   border: 0;
+  color: white;
 }
 
 .header {

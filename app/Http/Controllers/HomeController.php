@@ -9,7 +9,7 @@ class HomeController extends Controller
     public function index(request $request)
     {
         return view('pages.home',[
-            'title' => 'Home',
+            'title' => 'Seaeducation',
             'active' => 'home'
         ]);
     }

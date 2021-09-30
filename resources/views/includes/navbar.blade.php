@@ -52,7 +52,7 @@
           <li>
           @auth
             <li class="nav-item align-self-center">
-                <a class="nav-link " href="">Dashboard</a>
+                <a class="nav-link " href="{{ url('dashboard') }}">Dashboard</a>
             </li>
             <!-- daftar<a class="nav-link " href="">Welcome, //{/{ //auth()->user()->name }}</a>-->
             <li>
