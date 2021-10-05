@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
 use App\Models\Department;
+use App\Http\Requests\DepartmentRequest;
 use Illuminate\Http\Request;
 
 class DepartmentController extends Controller
@@ -12,9 +13,13 @@ class DepartmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(request $request)
     {
-        //
+        $departments = Department::all();
+
+        return view('pages.admin.department.index',[
+            'departments' => $departments
+        ]);
     }
 
     /**
@@ -24,7 +29,9 @@ class DepartmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.admin.department.create',[
+            'title' => 'CreateDepartment'
+        ]);
     }
 
     /**
@@ -33,9 +40,25 @@ class DepartmentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Departmentrequest $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:225',
+            'status' => 'required|max:225',
+            'slug' => 'required|max:225'
+        ]);
+
+        $validatedData['name'] = $request->name;
+        $validatedData['status'] = $request->status;
+        $validatedData['slug'] = $request->slug;
+
+
+        //hash password
+
+        Department::insert($validatedData);
+
+        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        return redirect('/department')->with('success', 'Department Has Been Added!');
     }
 
     /**
@@ -80,6 +103,7 @@ class DepartmentController extends Controller
      */
     public function destroy(Department $department)
     {
-        //
+        Department::destroy($department->id);
+        return redirect('/department')->with('success', 'Department Has Been Deleted!');
     }
 }

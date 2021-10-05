@@ -16,7 +16,8 @@ class CreateBatchesTable extends Migration
         Schema::create('batches', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('slug')->unique();
+            $table->string('status');
+            $table->timestamp('deleted_at');
             $table->timestamps();
         });
     }

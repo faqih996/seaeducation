@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests\BatchRequest;
 use App\Models\Batch;
 use Illuminate\Http\Request;
+
+
 
 class BatchController extends Controller
 {
@@ -12,9 +14,14 @@ class BatchController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(request $request)
     {
-        //
+
+        $data_batches = Batch::all();
+
+        return view('pages.admin.batch.index',[
+            'data_batches' => $data_batches
+        ]);
     }
 
     /**
@@ -24,7 +31,9 @@ class BatchController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.admin.batch.create',[
+            'title' => 'CreateBatch'
+        ]);
     }
 
     /**
@@ -33,9 +42,22 @@ class BatchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Batchrequest $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:225',
+            'status' => 'required|max:225'
+        ]);
+
+        $validatedData['name'] = $request->name;
+        $validatedData['status'] = $request->status;
+
+        //hash password
+
+        Batch::insert($validatedData);
+
+        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        return redirect('/batch')->with('success', 'Batch Has Been Added!');
     }
 
     /**
@@ -80,6 +102,7 @@ class BatchController extends Controller
      */
     public function destroy(Batch $batch)
     {
-        //
+        Batch::destroy($batch->id);
+        return redirect('/batch')->with('success', 'Batch Has Been Deleted!');
     }
 }

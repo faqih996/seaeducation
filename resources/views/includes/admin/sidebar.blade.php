@@ -6,7 +6,7 @@
                     <p class="color-palette-2 m-0">shayna@anne.com</p>
                 </div>
                 <div class="menus">
-                    <div class="item mb-30">
+                    <div class="item mb-30 active">
                         <svg class="icon me-3" width="25" height="25" viewBox="0 0 25 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.9033 14.7502H14.9033V21.7502H21.9033V14.7502Z" stroke="#7E8CAC"
@@ -18,7 +18,7 @@
                             <path d="M10.9033 3.75024H3.90332V10.7502H10.9033V3.75024Z" stroke="#7E8CAC"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        <p class="item-title m-0">
+                        <p class="item-title m-0 ">
                             <a href="{{ url('dashboard') }}" class="text-lg text-decoration-none">Overview</a>
                         </p>
                     </div>
@@ -30,7 +30,6 @@
                         </svg>
 
                         <p class="item-title m-0">
-<<<<<<< HEAD
                             <a href="{{ url('profile') }}" class="text-lg text-decoration-none">Profile</a>
                         </p>
                     </div>
@@ -63,8 +62,7 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <p class="item-title m-0">
-=======
->>>>>>> parent of 71e970e (Edit Sidebar)
+
                             <a href="../member/transactions.html" class="text-lg text-decoration-none">Transactions</a>
                         </p>
                     </div>
@@ -135,4 +133,4 @@
                     </div>
                 </div>
             </div>
-        </section>
+

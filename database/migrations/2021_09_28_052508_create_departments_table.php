@@ -17,6 +17,8 @@ class CreateDepartmentsTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('slug')->unique();
+            $table->string('status');
+            $table->timestamp('deleted_at');
             $table->timestamps();
         });
     }

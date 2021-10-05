@@ -428,6 +428,10 @@
   /*  */
 }
 
+.h2 {
+  font: "josefin";
+}
+
 /* Sign-in */
 .sign-in .img-fluid {
   max-width: 100%;
