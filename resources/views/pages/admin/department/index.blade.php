@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
+                                    <thead class="text-center">
                                         <tr>
 
                                             <th>Name</th>
@@ -42,16 +42,16 @@
                                         </tr>
                                     </thead>
 
-                                    <tbody>
-                                        @forelse($departments as $item)
+                                    <tbody class="text-center">
+                                        @forelse($items as $item)
                                             <tr>
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ route('department.edit', $item->id) }}" class="btn btn-info">
+                                                    <a href="{{ url('/updatedepartment', $item->id) }}" class="btn btn-info">
                                                         <i class="fa fa-pencil-alt"></i>
                                                     </a>
-                                                    <form action="{{ route('department.destroy', $item->id) }}" method="post"
+                                                    <form action="{{ url('/updatedepartment', $item->id) }}"" method="post"
                                                         class="d-inline">
                                                         @csrf
                                                         @method('delete')

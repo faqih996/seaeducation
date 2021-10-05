@@ -15,10 +15,10 @@ class DepartmentController extends Controller
      */
     public function index(request $request)
     {
-        $departments = Department::all();
+        $items = Department::all();
 
         return view('pages.admin.department.index',[
-            'departments' => $departments
+            'items' => $items
         ]);
     }
 
@@ -69,7 +69,7 @@ class DepartmentController extends Controller
      */
     public function show(Department $department)
     {
-        //
+
     }
 
     /**
@@ -78,9 +78,13 @@ class DepartmentController extends Controller
      * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
-    public function edit(Department $department)
+    public function edit($id)
     {
-        //
+        $item = Department::findOrFail($id);
+
+        return view('pages.admin.department.edit',[
+            'item' => $item
+        ]);
     }
 
     /**
@@ -90,9 +94,20 @@ class DepartmentController extends Controller
      * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Department $department)
+    public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:225',
+            'status' => 'required|max:225',
+            'slug' => 'required|max:225'
+        ]);
+
+        $item = Department::findOrFail($id);
+
+        $item->update($validatedData);
+
+        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        return redirect('/department')->with('success', 'Department Has Been Added!');
     }
 
     /**
@@ -101,9 +116,9 @@ class DepartmentController extends Controller
      * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Department $department)
+    public function destroy(Department $item)
     {
-        Department::destroy($department->id);
-        return redirect('/department')->with('success', 'Department Has Been Deleted!');
+            Department::destroy($item->id);
+            return redirect('/department')->with('success', 'Department Has Been Deleted!');
     }
 }

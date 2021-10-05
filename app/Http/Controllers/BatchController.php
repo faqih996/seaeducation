@@ -17,10 +17,10 @@ class BatchController extends Controller
     public function index(request $request)
     {
 
-        $data_batches = Batch::all();
+        $items = Batch::all();
 
         return view('pages.admin.batch.index',[
-            'data_batches' => $data_batches
+            'items' => $items
         ]);
     }
 

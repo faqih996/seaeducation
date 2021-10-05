@@ -42,15 +42,21 @@ Route::post('/register', [RegisterController::class,'store']);
 
 Route::get('/login', [LoginController::class,'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class,'authenticate']);
+
 Route::post('/logout', [LoginController::class,'logout']);
 
 Route::get('/dashboard', [DashboardController::class,'index'])->name('Dashboard')->middleware('auth');
 
+
 Route::get('/batch', [BatchController::class,'index'])->name('Batch')->middleware('auth');
 Route::get('/createbatch', [BatchController::class,'create'])->middleware('auth');
 Route::post('/createbatch', [BatchController::class,'store'])->middleware('auth');
+Route::get('/updatebatch', [BatchController::class,'edit'])->middleware('auth');
+Route::post('/updatebatch', [BatchController::class,'update'])->middleware('auth');
 
 
 Route::get('/department', [DepartmentController::class,'index'])->name('Department')->middleware('auth');
 Route::get('/createdepartment', [DepartmentController::class,'create'])->middleware('auth');
 Route::post('/createdepartment', [DepartmentController::class,'store'])->middleware('auth');
+Route::get('/updatedepartment', [DepartmentController::class,'edit'])->middleware('auth');
+Route::post('/updatedepartment', [DepartmentController::class,'update'])->middleware('auth');

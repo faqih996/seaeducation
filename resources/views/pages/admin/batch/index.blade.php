@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
+                                    <thead class="text-center">
                                         <tr>
 
                                             <th>Name</th>
@@ -42,16 +42,16 @@
                                         </tr>
                                     </thead>
 
-                                    <tbody>
-                                        @forelse($data_batches as $batch)
+                                    <tbody class="text-center">
+                                        @forelse($items as $item)
                                             <tr>
-                                                <td>{{ $batch->name }}</td>
-                                                <td>{{ $batch->status }}</td>
+                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ route('batch.edit', $batch->id) }}" class="btn btn-info">
+                                                    <a href="{{ url('/updatebatch', $item->id) }}" class="btn btn-info">
                                                         <i class="fa fa-pencil-alt"></i>
                                                     </a>
-                                                    <form action="{{ route('batch.destroy', $batch->id) }}" method="post"
+                                                    <form action="{{ url('/batch', $item->id) }}" method="post"
                                                         class="d-inline">
                                                         @csrf
                                                         @method('delete')

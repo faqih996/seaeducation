@@ -17,8 +17,8 @@ class CreateBatchesTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('status');
-            $table->timestamp('deleted_at');
-            $table->timestamps();
+            $table->softDeletes();
+            $table->timestamps('');
         });
     }
 
