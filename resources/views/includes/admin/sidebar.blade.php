@@ -2,8 +2,8 @@
             <div class="content pt-50 pb-30 ps-30">
                 <div class="user text-center pb-50 pe-30">
                     <img src="../assets/img/avatar-1.png" width="90" height="90" class="img-fluid mb-20" />
-                    <h2 class="fw-bold text-xl color-palette-1 m-0">Shayna Anne</h2>
-                    <p class="color-palette-2 m-0">shayna@anne.com</p>
+                    <h2 class="fw-bold text-xl color-palette-1 m-0">{{ Auth::user()->name }}</h2>
+                    <p class="color-palette-2 m-0">{{ Auth::user()->email }}</p>
                 </div>
                 <div class="menus">
                     <div class="item mb-30 active">
@@ -127,9 +127,12 @@
                             <path d="M12.9033 2.41406V12.4141" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                        <p class="item-title m-0">
-                            <a href="" class="text-lg text-decoration-none">Log Out</a>
+                        <form action="/logout" method="post" text-decoration-none>
+                        <p class="item-title m-0 text-decoration-none">
+                            @csrf
+                            <button href="" class="text-lg text-decoration-none border-0" background="none" type="submit" role="button">Log Out</button>
                         </p>
+                        </form>
                     </div>
                 </div>
             </div>

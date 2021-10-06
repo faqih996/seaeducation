@@ -7,6 +7,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class IsAdmin
 {
     /**
@@ -18,10 +19,10 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->input('token') !== 'Admin') {
-            return redirect('/');
+        if (Auth::user() && Auth::user()->roles == 'Admin') {
+            return $next($request);
         }
 
-        return $next($request);
+        return redirect('/');
     }
 }

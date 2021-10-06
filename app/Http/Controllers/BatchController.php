@@ -77,9 +77,13 @@ class BatchController extends Controller
      * @param  \App\Models\Batch  $batch
      * @return \Illuminate\Http\Response
      */
-    public function edit(Batch $batch)
+    public function edit($id)
     {
-        //
+        $item = Batch::findOrFail($id);
+
+        return view('pages.admin.department.edit',[
+            'item' => $item
+        ]);
     }
 
     /**
@@ -89,9 +93,20 @@ class BatchController extends Controller
      * @param  \App\Models\Batch  $batch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Batch $batch)
+    public function update(Request $request, Batch $id)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:225',
+            'status' => 'required|max:225',
+
+        ]);
+
+        $item = Batch::findOrFail($id);
+
+        $item->update($validatedData);
+
+        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        return redirect('/department')->with('success', 'Department Has Been Added!');
     }
 
     /**

@@ -48,8 +48,8 @@
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ url('/updatebatch', $item->id) }}" class="badge bg-info text-decoration-none">
-                                                        <i class="fa fa-pencil-alt text-decoration-none">Update</i>
+                                                    <a href="{{ url('/updatebatch', $item->id) }}" class="btn btn-info">
+                                                        <i class="fa fa-pencil-alt">Update</i>
                                                     </a>
                                                     <form action="{{ url('/batch', $item->id) }}" method="post"
                                                         class="d-inline">
