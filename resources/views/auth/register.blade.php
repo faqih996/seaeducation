@@ -115,7 +115,7 @@
                   id="password"
                   name="password"
                   aria-describedby="password"
-                  placeholder="Your password"
+                  placeholder=""
                   required
                 />
 

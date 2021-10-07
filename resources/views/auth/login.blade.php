@@ -114,7 +114,7 @@
                         id="password"
                         name="password"
                         aria-describedby="password"
-                        placeholder="Your password"
+                        placeholder=""
                         required/>
                     </div>
 
@@ -130,16 +130,24 @@
                             role="button"
                             >Masuk</button
                         >
+                        @if (Route::has('password.request'))
+                        <a class="align-self-end text-decoration-none" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}</a>
+                        @endif
+
                         <!-- <button type="submit"
                                         class="btn btn-sign-in fw-medium text-lg text-white rounded-pill mb-16"
                                         role="button">Continue to Sign In</button> -->
-                    <h6 class="hal mt-3"> sudah punya akun?
+                        <h6 class="hal mt-3 "> Belum punya akun?
 
                         <a
-                            href="{{ url('/register') }}"
+                            class="text-decoration-none"
+                            href="{{ __('register') }}"
                             role="button"
                             >Daftar Sekarang</a
                         >
+
+
 
                     </h6>
                     </div>
