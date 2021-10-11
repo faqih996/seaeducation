@@ -20,11 +20,11 @@
             alt=""
           />
           <h2 class="text-4xl fw-bold text-white mb-30">
-            Let's Navigate Your Futur<br />
-            with Sea Education.
+            Navigate Your Future with<br />
+            Sea Education.
           </h2>
           <p class="text-white m-0">
-            Kami membantu kamu<br />
+            Kami membantu kamu
             meraih mimpimu bekerja<br />
             dan sukses di hotel & kapal pesiar
           </p>

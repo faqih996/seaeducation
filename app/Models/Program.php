@@ -18,4 +18,10 @@ class Program extends Model
     protected $hiden = [
 
     ];
+
+
+    public function batch()
+    {
+        return $this->hasMany(Batch::class);
+    }
 }

@@ -276,6 +276,7 @@
 }
 
 .text-4xl {
+    font-family: "Playfair Display";
     font-size: 2rem;
     line-height: 2.5rem;
 }
@@ -464,12 +465,13 @@
 }
 
 .h2 {
-    font: "josefin";
+    font: "Assistant";
 }
 /* Sign-in */
 .sign-in .img-fluid {
     max-width: 100%;
     height: auto;
+    border-radius: 70px 0px 110px 0px;
 }
 
 .sign-in .bg-blue {

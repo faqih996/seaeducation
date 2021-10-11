@@ -195,7 +195,7 @@
     <div class="col-sm-2 col-sm-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
-          <img src="{{ url('frontend/assets/hotel.png') }}" alt="" />
+          <img src="{{ url('frontend/assets/training.png') }}" alt="" />
         </div>
         <div class="card-body">
           <h5 class="card-seaedu-title">Praktek Kerja</h5>
@@ -237,6 +237,90 @@
 </section>
 <!--apa itu sea education end-->
 
+<!--program-->
+<section class="program">
+    <div class="container">
+        <h1 class="section-tittle mt-4 my-4 align-content-center">
+            Program Sea Education
+        </h1>
+        <span class="section-lecturer-line"></span>
+      </div>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 mb-3">
+                <div class="justify-content-between col-md-5">
+                    <div class="col">
+                        <div class="card program-card mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Regular Program</h3>
+                                <p class="card-text">
+                                Durasi 3 Bulan + 6 Bulan On The Job Training
+                                </p>
+                                <h7 class="card-text md-5">
+                                    Batch-8
+                                </h7>
+                                <p class="card-text">
+                                    Deadline Pendaftaran 20 September 2021
+                                </p>
+
+                                <div class="button">
+                                    <button href="" class="button btn-secondary d-sm-block d-md-none">Kurikulum</button>
+                                    <button href="" class="button btn-login d-sm-block d-md-none">Daftar Sekarang</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="col">
+                        <div class="program-card card">
+                            <div class="card-body">
+                                <h3 class="card-title">Excecutive Program</h3>
+                                <p class="card-text">
+                                Durasi 3 Bulan
+                                </p>
+                                <h7 class="card-text md-5">
+                                    Batch-8
+                                </h7>
+                                <p class="card-text">
+                                    Deadline Pendaftaran 20 September 2021
+                                </p>
+
+                                <div class="button">
+                                    <button href="" class="button btn-secondary d-md-block">Kurikulum</button>
+                                    <button href="" class="button btn-login d-md-block">Daftar Sekarang</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--programend-->
+
+<!--lecturer-->
+<section class="section-lecturer" id="lecturer">
+    <div class="container">
+        <h1 class="section-tittle mt-4 my-2 align-content-center">
+            Mentor di Sea Education
+        </h1>
+        <span class="section-lecturer-line"></span>
+      </div>
+    <div class="container align-content-center">
+        <div class="card" style="width: 14rem;">
+            <img src="{{ url('frontend/assets/kapal.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--endlectur-->
+
+
 <!--partner-->
 <section class="section-networks" id="networks">
     <div class="container align-content-center">
@@ -250,6 +334,7 @@
                     dan Agency terbaik di Indonesia & Dunia
                     </p>
                 </div>
+
                 <div class="col-md-4">
                     <h2>Perusahaan Rekanan</h2>
                     <p>
@@ -259,25 +344,26 @@
                     </p>
                 </div>
             </div>
-        </div>
 
-            <div class="col-md-4">
-                <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
+
+                <div class="col-md-7 d-inline align-self-center">
+                    <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
+                </div>
+
+                <div class="col-md-7 d-inline">
+                    <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
+                </div>
+
+                <div class="col-md-7 d-inline">
+                    <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
-            </div>
-            <div class="col-md-4">
-                <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
-            </div>
+
+
         </div>
     </div>
 </section>
 <!--partnerend-->
-
-<!--program-->
-
-<!--programend-->
 
 
 <!--testimoni-->

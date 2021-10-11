@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\admin\ProgramRequest;
 use App\Models\Program;
 use Illuminate\Http\Request;
+use
 
 class ProgramController extends Controller
 {
@@ -43,19 +44,11 @@ class ProgramController extends Controller
      */
     public function store(ProgramRequest $request)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:225',
-            'status' => 'required|max:225'
-        ]);
-
-        $validatedData['name'] = $request->name;
-        $validatedData['status'] = $request->status;
-
-        //hash password
-
-        Program::insert($validatedData);
+        $data = $request->all();
+        $data['slug'] = Str::slug($request->$title);
 
         //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        program::create($data);
         return redirect('/program')->with('success', 'Batch Has Been Added!');
     }
 

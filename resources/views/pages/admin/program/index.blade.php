@@ -35,7 +35,6 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead class="text-center">
                                         <tr>
-
                                             <th>Program</th>
                                             <th>Batch</th>
                                             <th>Start</th>
@@ -50,7 +49,6 @@
                                         @forelse($items as $item)
                                             <tr>
                                                 <td>{{ $item->title }}</td>
-                                                <td>{{ $item->batch_id }}</td>
                                                 <td>{{ $item->start_at }}</td>
                                                 <td>{{ $item->end_at }}</td>
                                                 <td>{{ $item->price }}</td>

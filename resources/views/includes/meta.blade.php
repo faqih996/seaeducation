@@ -22,3 +22,13 @@
           src="https://www.facebook.com/tr?id=215425747033004&ev=PageView&noscript=1"
           /></noscript>
       <!-- End Facebook Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0G633PZRTL"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0G633PZRTL');
+        </script>
