@@ -22,8 +22,12 @@ class CreateProgramsTable extends Migration
             $table->string('status');
             $table->foreignId('batch_id');
             $table->foreignId('department_id');
+            $table->integer('price');
+            $table->timestamp('start_at')->nullable();
+            $table->timestamp('end_at')->nullable();
             $table->timestamp('publish_at')->nullable();
             $table->timestamps('');
+            $table->softDeletes();
         });
     }
 

@@ -1,7 +1,7 @@
 <?php
 
 use App\models\Post;
-use App\models\Program;
+use App\models\Admin\Program;
 use App\Models\Batch;
 
 /* belajar di wpu
@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BatchController;
 use App\Http\Controllers\DepartmentController;
-
-use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\Admin\ProgramController;
 
 
 use App\Http\Controllers\DashboardController;
@@ -53,6 +52,12 @@ Route::group(['middleware' => ['verified']],function(){
     Route::post('/createdepartment', [DepartmentController::class,'store']);
     Route::get('/updatedepartment', [DepartmentController::class,'edit']);
     Route::post('/updatedepartment', [DepartmentController::class,'update']);
+
+    Route::get('/program', [ProgramController::class,'index']);
+    Route::get('/createprogram', [ProgramController::class,'create']);
+    Route::post('/createprogram', [ProgramController::class,'store']);
+    Route::get('/updateprogram', [ProgramController::class,'edit']);
+    Route::post('/updateprogram', [ProgramController::class,'update']);
 });
 
 

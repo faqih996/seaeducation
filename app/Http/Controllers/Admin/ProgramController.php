@@ -1,25 +1,24 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Http\Requests\BatchRequest;
-use App\Models\Batch;
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use App\Http\Requests\admin\ProgramRequest;
+use App\Models\Program;
 use Illuminate\Http\Request;
 
-
-
-class BatchController extends Controller
+class ProgramController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(request $request)
+    public function index()
     {
+        $items = Program::all();
 
-        $items = Batch::all();
-
-        return view('pages.admin.batch.index',[
+        return view('pages.admin.program.index',[
             'items' => $items
         ]);
     }
@@ -31,8 +30,8 @@ class BatchController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.batch.create',[
-            'title' => 'CreateBatch'
+        return view('pages.admin.program.create',[
+            'title' => 'CreateProgram'
         ]);
     }
 
@@ -42,7 +41,7 @@ class BatchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Batchrequest $request)
+    public function store(ProgramRequest $request)
     {
         $validatedData = $request->validate([
             'name' => 'required|max:225',
@@ -54,19 +53,19 @@ class BatchController extends Controller
 
         //hash password
 
-        Batch::insert($validatedData);
+        Program::insert($validatedData);
 
         //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
-        return redirect('/batch')->with('success', 'Batch Has Been Added!');
+        return redirect('/program')->with('success', 'Batch Has Been Added!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Batch  $batch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Batch $batch)
+    public function show($id)
     {
         //
     }
@@ -74,12 +73,12 @@ class BatchController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Batch  $batch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $item = Batch::findOrFail($id);
+        $item = Program::findOrFail($id);
 
         return view('pages.admin.department.edit',[
             'item' => $item
@@ -90,10 +89,10 @@ class BatchController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Batch  $batch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Batch $id)
+    public function update(Request $request, Program $id)
     {
         $validatedData = $request->validate([
             'name' => 'required|max:225',
@@ -101,7 +100,7 @@ class BatchController extends Controller
 
         ]);
 
-        $item = Batch::findOrFail($id);
+        $item = Program::findOrFail($id);
 
         $item->update($validatedData);
 
@@ -112,12 +111,12 @@ class BatchController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Batch  $batch
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Batch $batch)
+    public function destroy(Program $item)
     {
-        Batch::destroy($batch->id);
-        return redirect('/batch')->with('success', 'Batch Has Been Deleted!');
+        Program::destroy($item->id);
+            return redirect('/program')->with('success', 'Batch Has Been Deleted!');
     }
 }

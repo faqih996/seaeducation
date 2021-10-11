@@ -9,11 +9,7 @@ class ProgramController extends Controller
 {
     public function index(request $request)
     {
-        return view('pages.program', [
-        "title" => "Programs",
-        "program" => Program::all()
-
-        ]);
+        
     }
 
 

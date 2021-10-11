@@ -98,7 +98,7 @@ class DepartmentController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:225',
-            'status' => 'required|max:225',
+            'status' => 'required|max:225', 
             'slug' => 'required|max:225'
         ]);
 
