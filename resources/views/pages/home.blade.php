@@ -149,7 +149,7 @@
     <span class="section-seaeducation-line"></span>
   </div>
 
-  <div class="row mt-5">
+  <div class="row mt-2">
     <div class="col-md-2 col-md-2">
       <div class="card seaedu-card">
         <div class="seaedu-card__img">
@@ -264,8 +264,8 @@
                                 </p>
 
                                 <div class="button">
-                                    <button href="" class="button btn-secondary d-sm-block d-md-none">Kurikulum</button>
-                                    <button href="" class="button btn-login d-sm-block d-md-none">Daftar Sekarang</button>
+                                    <button href="" class="button btn-secondary ml-5">Kurikulum</button>
+                                    <button href="" class="button btn-login ">Daftar Sekarang</button>
                                 </div>
                             </div>
                         </div>
@@ -287,9 +287,9 @@
                                     Deadline Pendaftaran 20 September 2021
                                 </p>
 
-                                <div class="button">
-                                    <button href="" class="button btn-secondary d-md-block">Kurikulum</button>
-                                    <button href="" class="button btn-login d-md-block">Daftar Sekarang</button>
+                                <div class="button align-text-center">
+                                    <button href="" class="button btn-secondary ml-5">Kurikulum</button>
+                                    <button href="" class="button btn-login">Daftar Sekarang</button>
                                 </div>
                             </div>
                         </div>

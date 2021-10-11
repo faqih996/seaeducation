@@ -202,6 +202,7 @@ a.nav-link {
         margin: 5px auto;
         border: none;
         border-radius: 10px;
+        height: 300px;
 
         &__img {
             padding: 0.75rem;
@@ -219,54 +220,6 @@ a.nav-link {
     }
 }
 
-.seaedu {
-    padding: 1em 4em;
-    min-height: 300px;
-    margin-top: 70px;
-    background-color: #e68b03;
-
-    .section-title {
-        margin-top: 10px;
-        text-align: center;
-        font-weight: 700;
-    }
-
-    .program-card {
-        padding: 4em;
-        margin: 5px auto;
-        border: 5px;
-        border-radius: 10px;
-    }
-
-    .btn-login {
-        background-color: #1a3475;
-        color: white;
-        border: 1px;
-        padding: 13px 17px 13px 17px;
-        font-size: 18px;
-    }
-
-    .btn-login:hover {
-        background-color: #1a3475;
-        color: white;
-        border: 0;
-    }
-
-    .btn-secondary {
-        background: none;
-        border: 1px solid #e97e04;
-        padding: 15px 40px 15px 40px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #e97e04;
-    }
-
-    .btn-secondary:hover {
-        background: none;
-        border: 1px solid #1a3475;
-        color: #1a3475;
-    }
-}
 //network
 .section-networks {
     background-color: #fff;
@@ -312,7 +265,7 @@ a.nav-link {
 .listing-carousel-button {
     position: absolute;
     top: 50%;
-    width: 30px;
+    width: 40px;
     height: 50px;
     line-height: 50px;
     margin-top: 10px;
