@@ -16,7 +16,7 @@ class CreateBatchesTable extends Migration
         Schema::create('batches', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('status');
+            $table->string('status')->default('active');
             $table->softDeletes();
             $table->timestamps('');
         });

@@ -6,22 +6,28 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+
 class Program extends Model
 {
     use HasFactory;
-    use SoftDeletes;
+    use softDeletes;
 
-    protected $fillable=[
-        'title', 'slug', 'excerpt', 'body', 'batch_id', 'department_id', 'start_at', 'end_at', 'price'
+    protected $fillable= [
+    'tittle', 'slug', 'body', 'excerpt', 'body', 'location_id',
+    'status', 'batch_id', 'department_id', 'price', 'start_at', 'end_at'
     ];
 
-    protected $hiden = [
+    protected $hidden = [
 
     ];
-
 
     public function batch()
     {
-        return $this->hasMany(Batch::class);
+        return $this->belongsTo(Batch::class);
+    }
+
+    public function Department()
+    {
+        return $this->belongsTo(Department::class);
     }
 }

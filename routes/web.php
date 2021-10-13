@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BatchController;
 use App\Http\Controllers\DepartmentController;
-use App\Http\Controllers\Admin\ProgramController;
+use App\Http\Controllers\ProgramController;
+
 
 
 use App\Http\Controllers\DashboardController;
@@ -34,9 +35,6 @@ use PHPUnit\Framework\Constraint\RegularExpression;
 Auth::routes(['verify' => true]);
 
 Route::get('/', [HomeController::class,'index'])->name('home');
-
-Route::get('/program', [ProgramController::class, 'index'])->name('Programs');
-Route::get('/program/{slug}', [ProgramController::class, 'show']);
 
 Route::group(['middleware' => ['verified']],function(){
     Route::get('/dashboard', [DashboardController::class,'index'])->name('Dashboard');

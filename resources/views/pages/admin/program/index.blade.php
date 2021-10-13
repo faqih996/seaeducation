@@ -35,11 +35,12 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead class="text-center">
                                         <tr>
-                                            <th>Program</th>
-                                            <th>Batch</th>
-                                            <th>Start</th>
-                                            <th>End</th>
-                                            <th>Price</th>
+
+                                            <th>Title</th>
+                                            <th>slug</th>
+                                            <th>price</th>
+                                            <th>batch</th>
+                                            <th>Department</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -49,19 +50,21 @@
                                         @forelse($items as $item)
                                             <tr>
                                                 <td>{{ $item->title }}</td>
-                                                <td>{{ $item->start_at }}</td>
-                                                <td>{{ $item->end_at }}</td>
+                                                <td>{{ $item->slug }}</td>
                                                 <td>{{ $item->price }}</td>
+                                                <td>{{ $item->batch->name }}</td>
+                                                <td>{{ $item->department->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ /*url('/updateprogram', $item->id)*/ }}" class="badge bg-info text-decoration-none">
-                                                        <i class="fa fa-pencil-alt text-decoration-none">Update</i>
+                                                    <a href="{{ url('/updatedepartment', $item->id) }}" class="btn btn-info">
+                                                        <i class="fa fa-pencil-alt"></i>
                                                     </a>
-                                                    <form action="{{ /*url('/program', $item->id)*/ }}" method="post"
+                                                    <form action="{{ url('/updatedepartment', $item->id) }}"" method="post"
                                                         class="d-inline">
-
-                                                        <button class="badge bg-danger border-0" onclick="return confirm('Are You Sure?')">
-                                                           <span data-feather="x-circle">Hapus</span>
+                                                        @csrf
+                                                        @method('delete')
+                                                        <button class="btn btn-danger" onclick="return confirm('Are You Sure?')">
+                                                            <i class="fa fa-trash"></i>
                                                         </button>
                                                     </form>
                                                 </td>

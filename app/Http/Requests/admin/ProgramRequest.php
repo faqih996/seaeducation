@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Requests\admin;
+namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Symfony\Contracts\Service\Attribute\Required;
 
 class ProgramRequest extends FormRequest
 {
@@ -25,15 +24,16 @@ class ProgramRequest extends FormRequest
     public function rules()
     {
         return [
-            'title'=>'required|max:255',
-            'slug'=>'required|max:255',
-            'excerpt'=>'max:255',
-            'body'=>'required|max:255',
-            'batch_id'=>'required|max:255',
-            'department_id'=>'required|max:255',
-            'start_at'=>'required|date',
-            'end_at'=>'required|date',
-            'price'=>'required|integer'
+            'tittle' => 'required|max:255',
+            'body' => 'required',
+            'excerpt' => 'required',
+            'status' => 'required',
+            'location_id' => 'required',
+            'batch_id' => 'required',
+            'department_id' => 'required',
+            'price' => 'required|integer',
+            'start_at' => 'required|date',
+            'end_at' => 'required|date'
         ];
     }
 }

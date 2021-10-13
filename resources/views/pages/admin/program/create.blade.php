@@ -29,18 +29,12 @@
 
                                 <div class="col-sm-6">
                                     <label for="Batch" class="form-label">Batch</label>
-                                    <input type="text" class="form-control @error('title') is-invalid @enderror" name="batch" id="batch" placeholder="" value="{{ old('batch') }}" required>
+                                    <select class="form-select" name="batch_id" name="batch_id" id="">
+                                        @foreach($batches as $batch)
+                                            <option value="{{ $batch->id }}">{{ $batch->name }}</option>
+                                        @endforeach
+                                    </select>
                                     @error('batch')
-                                    <div class="invalid-feedback">
-                                                <strong>{{ $message }}</strong>
-                                    </div>
-                                    @enderror
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="department" class="form-label">Department</label>
-                                    <input type="text" class="form-control @error('department') is-invalid @enderror" name="department" id="department" placeholder="Department Select" value="{{ old('department') }}" required>
-                                    @error('department')
                                     <div class="invalid-feedback">
                                                 <strong>{{ $message }}</strong>
                                     </div>
@@ -89,7 +83,7 @@
 
                                 <div class="col-sm-6">
                                     <label for="Price" class="form-label">Price</label>
-                                    <input type="number" class="form-control @error('price') is-invalid @enderror" name="price" id="title" placeholder="start" value="{{ old('title') }}" required>
+                                    <input type="number" class="form-control @error('price') is-invalid @enderror" name="price" id="price" placeholder="price" value="{{ old('title') }}" required>
                                     @error('price')
                                     <div class="invalid-feedback">
                                                 <strong>{{ $message }}</strong>

@@ -18,7 +18,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         @endif
-                <h2 class="text-4xl fw-bold color-palette-1 mb-30">Master Batch</h2>
+                <h2 class="text-4xl fw-bold color-palette-1 mb-30">Master Program</h2>
                 <div class="top-up-categories mb-30">
 
                     <p class="text-lg fw-medium color-palette-1 mb-14"></p>
@@ -26,8 +26,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <a href="{{ url('createbatch') }}" class="btn btn-primary shadow-sm">
-                                <i class="fas fa-plus fa-sm text-white-50"></i> Tambah Batch
+                            <a href="{{ url('createprogram') }}" class="btn btn-primary shadow-sm">
+                                <i class="fas fa-plus fa-sm text-white-50"></i> Tambah Program
                             </a>
                         </div>
                         <div class="card-body">
@@ -45,13 +45,18 @@
                                     <tbody class="text-center">
                                         @forelse($items as $item)
                                             <tr>
-                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->title }}</td>
                                                 <td>{{ $item->status }}</td>
+                                                <td>{{ $item->price }}</td>
+                                                <td>{{ $item->start_at }}</td>
+                                                <td>{{ $item->end_at }}</td>
+
+
                                                 <td>
-                                                    <a href="{{ url('/updatebatch', $item->id) }}" class="btn btn-info">
+                                                    <a href="{{ url('updateprogram', $item->id) }}" class="btn btn-info">
                                                         <i class="fa fa-pencil-alt">Update</i>
                                                     </a>
-                                                    <form action="{{ url('/batch', $item->id) }}" method="post"
+                                                    <form action="{{ url('program', $item->id) }}" method="post"
                                                         class="d-inline">
                                                         @csrf
                                                         @method('delete')

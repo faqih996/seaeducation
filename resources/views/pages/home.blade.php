@@ -248,7 +248,7 @@
 
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 mb-3">
-                <div class="justify-content-between col-md-5">
+                <div class="justify-content-between col-md-4">
                     <div class="col">
                         <div class="card program-card mb-3">
                             <div class="card-body">
