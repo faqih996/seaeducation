@@ -28,33 +28,23 @@
                                 </div>
 
                                 <div class="col-sm-6">
-                                    <label for="Batch" class="form-label">Batch</label>
+                                    <label for="batch_id" class="form-label">Batch</label>
                                     <select class="form-select" name="batch_id" name="batch_id" id="">
                                         @foreach($batches as $batch)
-                                            <option value="{{ $batch->id }}">{{ $batch->name }}</option>
+                                            @if(old('batch_id') == $batch->id)
+                                            <option value="{{ $batch->id }}" selected>{{ $batch->name }}</option>
+                                            @else
+                                            <option value="{{ $batch->id }}" >{{ $batch->name }}</option>
+                                            @endif
                                         @endforeach
                                     </select>
-                                    @error('batch')
-                                    <div class="invalid-feedback">
-                                                <strong>{{ $message }}</strong>
-                                    </div>
-                                    @enderror
                                 </div>
 
-                                <div class="col-sm-6">
-                                    <label for="Body" class="form-label">Tentang Program</label>
-                                    <textarea class="form-control @error('body') is-invalid @enderror" name="body" id="body" placeholder="Tentang Program" value="{{ old('body') }}" required></textarea>
-                                    @error('body')
-                                    <div class="invalid-feedback">
-                                                <strong>{{ $message }}</strong>
-                                    </div>
-                                    @enderror
-                                </div>
 
                                 <div class="col-sm-6">
                                     <label for="start" class="form-label">Dimulai</label>
-                                    <input type="date" class="form-control @error('title') is-invalid @enderror" name="start" id="start" placeholder="start" value="{{ old('start') }}" required>
-                                    @error('start')
+                                    <input type="date" class="form-control @error('title') is-invalid @enderror" name="start_at" id="start_at" placeholder="start" value="{{ old('start_at') }}" required>
+                                    @error('start_at')
                                     <div class="invalid-feedback">
                                                 <strong>{{ $message }}</strong>
                                     </div>
@@ -63,19 +53,9 @@
 
                                 <div class="col-sm-6">
                                     <label for="end" class="form-label">Berakhir</label>
-                                    <input type="date" class="form-control @error('end') is-invalid @enderror" name="end" id="end" placeholder="end" value="{{ old('end') }}" required>
+                                    <input type="date" class="form-control @error('end') is-invalid @enderror" name="end_at" id="end_at" placeholder="end" value="{{ old('end_at') }}" required>
                                     <div class="invalid-feedback">
-                                        @error('end')
-                                                <strong>{{ $message }}</strong>
-                                        @enderror
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="status" class="form-label">Status</label>
-                                    <input type="text" class="form-control @error('status') is-invalid @enderror" name="status" id="status" placeholder="Status" value="{{ old('status') }}" required>
-                                    <div class="invalid-feedback">
-                                        @error('status')
+                                        @error('end_at')
                                                 <strong>{{ $message }}</strong>
                                         @enderror
                                     </div>

@@ -238,7 +238,7 @@
 <!--apa itu sea education end-->
 
 <!--program-->
-<section class="program">
+<section class="section-program">
     <div class="container">
         <h1 class="section-tittle mt-4 my-4 align-content-center">
             Program Sea Education
@@ -247,54 +247,34 @@
       </div>
 
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 mb-3">
+            <div class="row row-cols-3 row-cols-md-4 mb-4">
+                @foreach($program as $program)
                 <div class="justify-content-between col-md-4">
                     <div class="col">
-                        <div class="card program-card mb-3">
+                        <div class="card program-card mb-4">
                             <div class="card-body">
-                                <h3 class="card-title">Regular Program</h3>
-                                <p class="card-text">
-                                Durasi 3 Bulan + 6 Bulan On The Job Training
-                                </p>
-                                <h7 class="card-text md-5">
-                                    Batch-8
-                                </h7>
-                                <p class="card-text">
-                                    Deadline Pendaftaran 20 September 2021
-                                </p>
-
-                                <div class="button">
-                                    <button href="" class="button btn-secondary ml-5">Kurikulum</button>
-                                    <button href="" class="button btn-login ">Daftar Sekarang</button>
+                                <p class="badge rounded-pill bg-color">Online Class</p>
+                                <h3 class="title">{{ $program->title }}</h3>
+                                    <p class="card-week">
+                                    Durasi 13 Minggu </p>
+                                    <p class="card-text">
+                                    On The Job Training
+                                    </p>
+                                    <p class="card-text batch">
+                                        {{ $program->batch->name }}
+                                    </p>
+                                    <p class="card-text">
+                                        Deadline Pendaftaran <span class="batasdaftar"> 20 Sep 2021</span>
+                                    </p>
+                                <div class="button-group justify-content-center">
+                                    <button href="" class="button button-outline-primary btn-sm">Kurikulum</button>
+                                    <a href="" class="button button-primary btn-sm">Daftar</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-5">
-                    <div class="col">
-                        <div class="program-card card">
-                            <div class="card-body">
-                                <h3 class="card-title">Excecutive Program</h3>
-                                <p class="card-text">
-                                Durasi 3 Bulan
-                                </p>
-                                <h7 class="card-text md-5">
-                                    Batch-8
-                                </h7>
-                                <p class="card-text">
-                                    Deadline Pendaftaran 20 September 2021
-                                </p>
-
-                                <div class="button align-text-center">
-                                    <button href="" class="button btn-secondary ml-5">Kurikulum</button>
-                                    <button href="" class="button btn-login">Daftar Sekarang</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            @endforeach
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ProgramAdminController;
 use App\models\Post;
 use App\models\Admin\Program;
 use App\Models\Batch;
@@ -35,27 +36,31 @@ use PHPUnit\Framework\Constraint\RegularExpression;
 Auth::routes(['verify' => true]);
 
 Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/program', [ProgramController::class,'index'])->name('program');
 
 Route::group(['middleware' => ['verified']],function(){
     Route::get('/dashboard', [DashboardController::class,'index'])->name('Dashboard');
-    Route::get('/batch', [BatchController::class,'index']);
+
+
+    Route::get('/batch', [BatchController::class,'index'])->name('batch');
     Route::get('/createbatch', [BatchController::class,'create']);
     Route::post('/createbatch', [BatchController::class,'store']);
     Route::get('/updatebatch', [BatchController::class,'edit']);
     Route::post('/updatebatch', [BatchController::class,'update']);
 
-
-    Route::get('/department', [DepartmentController::class,'index']);
+    Route::get('/department', [DepartmentController::class,'index'])->name('department');
     Route::get('/createdepartment', [DepartmentController::class,'create']);
     Route::post('/createdepartment', [DepartmentController::class,'store']);
     Route::get('/updatedepartment', [DepartmentController::class,'edit']);
     Route::post('/updatedepartment', [DepartmentController::class,'update']);
 
-    Route::get('/program', [ProgramController::class,'index']);
-    Route::get('/createprogram', [ProgramController::class,'create']);
-    Route::post('/createprogram', [ProgramController::class,'store']);
-    Route::get('/updateprogram', [ProgramController::class,'edit']);
-    Route::post('/updateprogram', [ProgramController::class,'update']);
+    Route::get('/programadmin', [ProgramAdminController::class,'index'])->name('Admin program');
+
+    Route::get('/createprogram', [ProgramAdminController::class,'create']);
+    Route::post('/createprogram', [ProgramAdminController::class,'store']);
+    Route::get('/updateprogram', [ProgramAdminController::class,'edit']);
+    Route::post('/updateprogram', [ProgramAdminController::class,'update']);
+
 });
 
 

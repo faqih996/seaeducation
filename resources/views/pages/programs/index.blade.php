@@ -1,88 +1,48 @@
-@extends('layouts.admin')
+@extends('layouts.app')
 
 @section('content')
 
-<section class="overview overflow-auto">
-        <main class="main-wrapper">
-            <div class="ps-lg-0">
-                @if(session()->has('success'))
-                            <div class="alert alert-success col-lg-8 alert-dismissible fade show" role="alert">
-                                {{ session('success') }}
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        @endif
+<!--program-->
+<section class="section-program">
+    <div class="container ">
+        <h1 class="section-tittle mt-4 my-4 align-content-center">
+            Program Sea Education
+        </h1>
+        <span class="section-lecturer-line"></span>
+      </div>
 
-                        @if(session()->has('loginError'))
-                            <div class="alert alert-danger col-lg-8 alert-dismissible fade show" role="alert">
-                                {{ session('loginError') }}
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        @endif
-                <h2 class="text-4xl fw-bold color-palette-1 mb-30">Master Program</h2>
-                <div class="top-up-categories mb-30">
-
-                    <p class="text-lg fw-medium color-palette-1 mb-14"></p>
-                    <div class="main-content">
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <a href="{{ url('createprogram') }}" class="btn btn-primary shadow-sm">
-                                <i class="fas fa-plus fa-sm text-white-50"></i> Tambah Program
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead class="text-center">
-                                        <tr>
-
-                                            <th>Name</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody class="text-center">
-                                        @forelse($items as $item)
-                                            <tr>
-                                                <td>{{ $item->title }}</td>
-                                                <td>{{ $item->status }}</td>
-                                                <td>{{ $item->price }}</td>
-                                                <td>{{ $item->start_at }}</td>
-                                                <td>{{ $item->end_at }}</td>
-
-
-                                                <td>
-                                                    <a href="{{ url('updateprogram', $item->id) }}" class="btn btn-info">
-                                                        <i class="fa fa-pencil-alt">Update</i>
-                                                    </a>
-                                                    <form action="{{ url('program', $item->id) }}" method="post"
-                                                        class="d-inline">
-                                                        @csrf
-                                                        @method('delete')
-                                                        <button class="badge bg-danger border-0" onclick="return confirm('Are You Sure?')">
-                                                           <span data-feather="x-circle">Hapus</span>
-                                                        </button>
-                                                    </form>
-                                                </td>
-                                        @empty
-                                                <tr>
-                                                    <td colspan="7" class="text-center">
-                                                        Data Kosong
-                                                    </td>
-                                                </tr>
-
-                                            </tr>
-                                        @endforelse
-                                    </tbody>
-                                </table>
+        <div class="container">
+            <div class="row row-cols-3 row-cols-md-4 mb-4">
+                @foreach($program as $program)
+                <div class="justify-content-between col-md-5">
+                    <div class="col">
+                        <div class="card program-card mb-6 shadow p-3 mb-5 bg-body">
+                            <div class="card-body ">
+                                <p class="badge rounded-pill bg-color">Online Class</p>
+                                <h2 class="title">{{ $program->title }}</h2>
+                                    <p class="card-week">
+                                    Durasi 13 Minggu </p>
+                                    <p class="card-text">
+                                    On The Job Training
+                                    </p>
+                                    <p class="card-text batch">
+                                        {{ $program->batch->name }}
+                                    </p>
+                                    <p class="card-text">
+                                        Deadline Pendaftaran <span class="batasdaftar"> 20 Sep 2021</span>
+                                    </p>
+                                <div class="button-group justify-content-center">
+                                    <button href="" class="button button-outline-primary btn-sm">Kurikulum</button>
+                                    <a href="" class="button button-primary btn-sm">Daftar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- /.container-fluid -->
+            @endforeach
             </div>
         </div>
+    </div>
 </section>
+<!--programend-->
 @endsection

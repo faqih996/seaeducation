@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Requests\BatchRequest;
+use App\Http\Requests\Admin\BatchRequest;
 use App\Models\Batch;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 
 

@@ -25,12 +25,8 @@ class ProgramRequest extends FormRequest
     {
         return [
             'tittle' => 'required|max:255',
-            'body' => 'required',
-            'excerpt' => 'required',
             'status' => 'required',
-            'location_id' => 'required',
             'batch_id' => 'required',
-            'department_id' => 'required',
             'price' => 'required|integer',
             'start_at' => 'required|date',
             'end_at' => 'required|date'

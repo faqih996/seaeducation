@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Department;
-use App\Http\Requests\DepartmentRequest;
+use App\Http\Requests\Admin\DepartmentRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class DepartmentController extends Controller
 {
@@ -45,12 +46,12 @@ class DepartmentController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:225',
             'status' => 'required|max:225',
-            'slug' => 'required|max:225'
+
         ]);
 
         $validatedData['name'] = $request->name;
         $validatedData['status'] = $request->status;
-        $validatedData['slug'] = $request->slug;
+
 
 
         //hash password
@@ -98,7 +99,7 @@ class DepartmentController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:225',
-            'status' => 'required|max:225', 
+            'status' => 'required|max:225',
             'slug' => 'required|max:225'
         ]);
 

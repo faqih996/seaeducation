@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Models\Program;
 use App\Models\Batch;
 use App\Http\Requests\Admin\ProgramRequest;
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-
-class ProgramController extends Controller
+class ProgramAdminController extends Controller
 {
-    public function index(request $request)
+     public function index(request $request)
     {
-        $program = Program::all();
+        $items = Program::all();
 
-        return view('pages.programs.index',[
-            'program' => $program
+        return view('pages.admin.program.index',[
+            'items' => $items
         ]);
     }
 
@@ -59,5 +59,4 @@ class ProgramController extends Controller
         Program::destroy($item->id);
         return redirect('program')->with('success', 'Program Has Been Deleted!');
     }
-
 }

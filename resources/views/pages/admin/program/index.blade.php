@@ -40,7 +40,6 @@
                                             <th>slug</th>
                                             <th>price</th>
                                             <th>batch</th>
-                                            <th>Department</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -53,13 +52,12 @@
                                                 <td>{{ $item->slug }}</td>
                                                 <td>{{ $item->price }}</td>
                                                 <td>{{ $item->batch->name }}</td>
-                                                <td>{{ $item->department->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
                                                     <a href="{{ url('/updatedepartment', $item->id) }}" class="btn btn-info">
                                                         <i class="fa fa-pencil-alt"></i>
                                                     </a>
-                                                    <form action="{{ url('/updatedepartment', $item->id) }}"" method="post"
+                                                    <form action="{{ url('program', $item->id) }}" method="post"
                                                         class="d-inline">
                                                         @csrf
                                                         @method('delete')

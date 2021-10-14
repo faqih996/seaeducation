@@ -26,15 +26,7 @@
                                     </div>
                                     @enderror
                                 </div>
-                                <div class="col-sm-6">
-                                    <label for="slug" class="form-label">Slug</label>
-                                    <input type="text" class="form-control @error('slug') is-invalid @enderror" name="slug" id="slug" placeholder="" value="{{ old('slug') }}" required>
-                                    @error('name')
-                                    <div class="invalid-feedback">
-                                                <strong>{{ $message }}</strong>
-                                    </div>
-                                    @enderror
-                                </div>
+
                                 <div class="col-sm-6">
                                     <label for="status" class="form-label">Status</label>
                                     <input type="text" class="form-control @error('status') is-invalid @enderror" name="status" id="status" placeholder="Status" value="{{ old('status') }}" required>

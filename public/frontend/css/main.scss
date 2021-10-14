@@ -238,12 +238,89 @@ a.nav-link {
     }
 }
 
+.section-program {
+    background-color: #eceef3;
+    padding-top: 20px;
+    h1 {
+        font-weight: normal;
+    }
+    .program-card {
+        .card-body {
+            color: #071c4d;
+            h2 {
+                font-weight: bold;
+                font-size: 34px;
+            }
+
+            p.badge.rounded-pill.bg-color {
+                background-color: #fce5cc;
+                color: #aa5700;
+                font-weight: bold;
+                padding: 3px 6px;
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            p.card-text.batch {
+                font-weight: bold;
+                margin-bottom: -1px;
+            }
+
+            p.card-week {
+                margin-bottom: -1px;
+            }
+
+            span.batasdaftar {
+                font-weight: bold;
+                color: #aa5700;
+            }
+
+            .button-group {
+                flex: 1;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                width: 100%;
+                margin-top: 12px;
+
+                .button-outline-primary {
+                    flex: 1;
+                    background-color: #fff;
+                    border: 1px solid #1a3475;
+                    border-radius: 3px;
+                    font-size: 16px;
+                    padding: 10px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-right: 10px;
+                    color: #1a3475;
+                }
+
+                .button-primary {
+                    flex: 1;
+                    background: #1a3475;
+                    border: 1px solid #1a3475;
+                    color: #fff;
+                    border-radius: 3px;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
 .testimonial {
     width: 100%;
     max-height: 900px;
     background: linear-gradient(#3570d9, #1a3475);
     color: white;
-    padding-top: 30px;
+    padding-top: 20px;
     font-family: "Open Sans";
     text-align: center;
     position: relative;

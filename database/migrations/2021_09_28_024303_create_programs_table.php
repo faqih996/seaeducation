@@ -20,9 +20,7 @@ class CreateProgramsTable extends Migration
             $table->text('excerpt')->nullable();
             $table->text('body')->nullable();
             $table->string('status')->default('active');
-            $table->foreignId('location_id');
             $table->foreignId('batch_id');
-            $table->foreignId('department_id');
             $table->integer('price');
             $table->date('start_at');
             $table->date('end_at');
