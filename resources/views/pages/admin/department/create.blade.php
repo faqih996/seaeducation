@@ -15,7 +15,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-body">
 
-                            <form action="/createdepartment" method="post">
+                            <form action="/department/store" method="post">
                                 @csrf
                                 <div class="col-sm-6">
                                     <label for="name" class="form-label">Name</label>

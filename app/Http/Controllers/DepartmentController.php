@@ -51,6 +51,7 @@ class DepartmentController extends Controller
 
         $validatedData['name'] = $request->name;
         $validatedData['status'] = $request->status;
+        $validatedData['slug'] = Str::slug($request->name);
 
 
 
@@ -97,17 +98,11 @@ class DepartmentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:225',
-            'status' => 'required|max:225',
-            'slug' => 'required|max:225'
-        ]);
+        $data = $request->all();
 
-        $item = Department::findOrFail($id);
+        $data['slug'] = Str::slug($request->name);
+        $item = Department::find($id)->update($data);
 
-        $item->update($validatedData);
-
-        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
         return redirect('/department')->with('success', 'Department Has Been Added!');
     }
 

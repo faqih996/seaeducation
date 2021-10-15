@@ -26,7 +26,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <a href="{{ url('createdepartment') }}" class="btn btn-primary shadow-sm">
+                            <a href="{{ url('/department/create') }}" class="btn btn-primary shadow-sm">
                                 <i class="fas fa-plus fa-sm text-white-50"></i> Tambah Department
                             </a>
                         </div>
@@ -48,15 +48,14 @@
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ url('/updatedepartment', $item->id) }}" class="btn btn-info">
-                                                        <i class="fa fa-pencil-alt"></i>
+                                                    <a href="/department/edit/{{ $item->id }}" class="badge bg-info text-decoration-none">
+                                                        <i class="fa fa-pencil-alt text-decoration-none">Update</i>
                                                     </a>
-                                                    <form action="{{ url('/updatedepartment', $item->id) }}"" method="post"
-                                                        class="d-inline">
+                                                    <form action="/department/{{$item->slug }}" method="post" class="d-inline">
                                                         @csrf
-                                                        @method('delete')
-                                                        <button class="btn btn-danger" onclick="return confirm('Are You Sure?')">
-                                                            <i class="fa fa-trash"></i>
+                                                        @method('DELETE')
+                                                        <button class="badge bg-danger border-0" onclick="return confirm('Are You Sure?')">
+                                                           <span data-feather="x-circle">Hapus</span>
                                                         </button>
                                                     </form>
                                                 </td>

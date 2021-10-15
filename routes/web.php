@@ -43,23 +43,23 @@ Route::group(['middleware' => ['verified']],function(){
 
 
     Route::get('/batch', [BatchController::class,'index'])->name('batch');
-    Route::get('/createbatch', [BatchController::class,'create']);
-    Route::post('/createbatch', [BatchController::class,'store']);
-    Route::get('/updatebatch', [BatchController::class,'edit']);
-    Route::post('/updatebatch', [BatchController::class,'update']);
+    Route::get('/batch/create', [BatchController::class,'create'])->name('createbatch');
+    Route::post('/batch/store', [BatchController::class,'store']);
+    Route::get('/batch/edit/{id}', [BatchController::class,'edit']);
+    Route::post('/batch/update/{id}', [BatchController::class,'update']);
 
     Route::get('/department', [DepartmentController::class,'index'])->name('department');
-    Route::get('/createdepartment', [DepartmentController::class,'create']);
-    Route::post('/createdepartment', [DepartmentController::class,'store']);
-    Route::get('/updatedepartment', [DepartmentController::class,'edit']);
-    Route::post('/updatedepartment', [DepartmentController::class,'update']);
+    Route::get('/department/create', [DepartmentController::class,'create']);
+    Route::post('/department/store', [DepartmentController::class,'store']);
+    Route::get('/department/edit/{id}', [DepartmentController::class,'edit']);
+    Route::post('/department/update/{id}', [DepartmentController::class,'update']);
 
     Route::get('/programadmin', [ProgramAdminController::class,'index'])->name('Admin program');
 
     Route::get('/createprogram', [ProgramAdminController::class,'create']);
     Route::post('/createprogram', [ProgramAdminController::class,'store']);
-    Route::get('/updateprogram', [ProgramAdminController::class,'edit']);
-    Route::post('/updateprogram', [ProgramAdminController::class,'update']);
+    Route::get('/updateprogram/{id}', [ProgramAdminController::class,'edit']);
+    Route::post('/updateprogram/{id}', [ProgramAdminController::class,'update']);
 
 });
 

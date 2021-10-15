@@ -18,4 +18,9 @@ class Department extends Model
     protected $hiden = [
 
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

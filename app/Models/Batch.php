@@ -17,6 +17,6 @@ class Batch extends Model
     ];
 
     protected $hiden = [
-
+        
     ];
 }

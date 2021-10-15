@@ -245,6 +245,10 @@ a.nav-link {
   font-weight: normal;
 }
 
+.section-program .program-card {
+  border-radius: 10px;
+}
+
 .section-program .program-card .card-body {
   color: #071c4d;
 }
@@ -259,7 +263,7 @@ a.nav-link {
   color: #aa5700;
   font-weight: bold;
   padding: 3px 6px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
 }
 

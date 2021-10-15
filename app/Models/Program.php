@@ -14,7 +14,7 @@ class Program extends Model
 
     protected $fillable= [
     'tittle', 'slug', 'body', 'excerpt', 'body', 'location_id',
-    'status', 'batch_id', 'department_id', 'price', 'start_at', 'end_at'
+    'status', 'batch_id', 'class', 'price', 'start_at', 'end_at'
     ];
 
     protected $hidden = [

@@ -36,6 +36,7 @@ class ProgramController extends Controller
             'batch_id' => 'required',
             'start_at' => 'date',
             'end_at' => 'date',
+            'class' => 'required',
             'price' => 'required|max:225',
 
         ]);
@@ -44,6 +45,7 @@ class ProgramController extends Controller
         $validatedData['batch_id'] = $request->batch_id;
         $validatedData['start_at'] = $request->start_at;
         $validatedData['end_at'] = $request->end_at;
+        $validatedData['class'] = $request->class;
         $validatedData['price'] = $request->price;
         $validatedData['slug'] = Str::slug($request->title);
 

@@ -151,11 +151,11 @@
 
   <div class="row mt-2">
     <div class="col-md-2 col-md-2">
-      <div class="card seaedu-card">
+      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/mentor.png') }}" alt="" />
         </div>
-        <div class="card-body">
+        <div class="card-body ">
           <h5 class="card-seaedu-title">Mentor Professional</h5>
           <p class="card-seatext">
             Mentor merupakan professional dan expert di bidangnya
@@ -164,8 +164,8 @@
       </div>
     </div>
 
-    <div class="col-md-2 col-md-2">
-      <div class="card seaedu-card">
+    <div class="col-md-2 col-md-2 ">
+      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/consultancy.png') }}" alt="" />
         </div>
@@ -179,7 +179,7 @@
     </div>
 
     <div class="col-sm-2 col-sm-2">
-      <div class="card seaedu-card">
+      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/certificate.png') }}" alt="" />
         </div>
@@ -207,7 +207,7 @@
     </div>
 
     <div class="col-sm-2 col-sm-2">
-      <div class="card seaedu-card">
+      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/hiring.png') }}" alt="" />
         </div>
@@ -221,7 +221,7 @@
     </div>
 
     <div class="col-sm-2 col-sm-2">
-      <div class="card seaedu-card">
+      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/document.png') }}" alt="" />
         </div>

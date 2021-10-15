@@ -18,7 +18,7 @@
                     <div class="col">
                         <div class="card program-card mb-6 shadow p-3 mb-5 bg-body">
                             <div class="card-body ">
-                                <p class="badge rounded-pill bg-color">Online Class</p>
+                                <p class="badge rounded-pill bg-color">{{ $program->class }} Class</p>
                                 <h2 class="title">{{ $program->title }}</h2>
                                     <p class="card-week">
                                     Durasi 13 Minggu </p>

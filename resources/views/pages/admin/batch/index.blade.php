@@ -26,7 +26,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <a href="{{ url('createbatch') }}" class="btn btn-primary shadow-sm">
+                            <a href="{{ url('/batch/create') }}" class="btn btn-primary shadow-sm">
                                 <i class="fas fa-plus fa-sm text-white-50"></i> Tambah Batch
                             </a>
                         </div>
@@ -48,13 +48,12 @@
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ url('/updatebatch', $item->id) }}" class="badge bg-info text-decoration-none">
+                                                    <a href="{{ url('/batch/edit', $item->id) }}" class="badge bg-info text-decoration-none">
                                                         <i class="fa fa-pencil-alt text-decoration-none">Update</i>
                                                     </a>
-                                                    <form action="{{ url('/batch', $item->id) }}" method="post"
-                                                        class="d-inline">
+                                                    <form action="{{ url('batch', $item->id) }}" method="post" class="d-inline">
                                                         @csrf
-                                                        @method('delete')
+                                                        @method('DELETE')
                                                         <button class="badge bg-danger border-0" onclick="return confirm('Are You Sure?')">
                                                            <span data-feather="x-circle">Hapus</span>
                                                         </button>

@@ -82,7 +82,7 @@ class BatchController extends Controller
     {
         $item = Batch::findOrFail($id);
 
-        return view('pages.admin.department.edit',[
+        return view('pages.admin.batch.edit',[
             'item' => $item
         ]);
     }
@@ -94,20 +94,13 @@ class BatchController extends Controller
      * @param  \App\Models\Batch  $batch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Batch $id)
+    public function update(Request $request, $id)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:225',
-            'status' => 'required|max:225',
+        $data = $request->all();
 
-        ]);
+        $item = Batch::find($id)->update($data);
 
-        $item = Batch::findOrFail($id);
-
-        $item->update($validatedData);
-
-        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
-        return redirect('/batch')->with('success', 'Department Has Been Edited!');
+        return redirect('/batch')->with('success', 'Batch Has Been Updated!');
     }
 
     /**
@@ -116,9 +109,12 @@ class BatchController extends Controller
      * @param  \App\Models\Batch  $batch
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Batch $batch)
+    public function destroy($id)
     {
-        Batch::destroy($batch->id);
-        return redirect('/batch')->with('success', 'Batch Has Been Deleted!');
+        $item = Batch::find($id);
+
+        $item->delete();
+
+        return back('/batch')->with('success', 'Batch Has Been Deleted!');
     }
 }

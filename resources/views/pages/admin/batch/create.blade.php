@@ -15,7 +15,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-body">
 
-                            <form action="/createbatch" method="post">
+                            <form action="{{ url('/batch/store') }}" method="post">
                                 @csrf
                                 <div class="col-sm-6">
                                     <label for="name" class="form-label">Batch</label>
