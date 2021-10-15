@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Admin\ProgramAdminController;
+
 use App\models\Post;
 use App\models\Admin\Program;
 use App\Models\Batch;
@@ -12,8 +12,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DetailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\BatchController;
-use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\Admin\BatchController;
+use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\ProgramAdminController;
 use App\Http\Controllers\ProgramController;
 
 
@@ -51,7 +52,7 @@ Route::group(['middleware' => ['verified']],function(){
     Route::get('/department', [DepartmentController::class,'index'])->name('department');
     Route::get('/department/create', [DepartmentController::class,'create']);
     Route::post('/department/store', [DepartmentController::class,'store']);
-    Route::get('/department/edit/{id}', [DepartmentController::class,'edit']);
+    Route::get('/department/edit/{slug}', [DepartmentController::class,'edit']);
     Route::post('/department/update/{id}', [DepartmentController::class,'update']);
 
     Route::get('/programadmin', [ProgramAdminController::class,'index'])->name('Admin program');

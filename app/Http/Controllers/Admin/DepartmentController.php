@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\Http\Requests\Admin\BatchRequest;
-use App\Models\Batch;
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use App\Models\Department;
+use App\Http\Requests\Admin\DepartmentRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-
-
-class BatchController extends Controller
+class DepartmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,10 +17,9 @@ class BatchController extends Controller
      */
     public function index(request $request)
     {
+        $items = Department::all();
 
-        $items = Batch::all();
-
-        return view('pages.admin.batch.index',[
+        return view('pages.admin.department.index',[
             'items' => $items
         ]);
     }
@@ -32,8 +31,8 @@ class BatchController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.batch.create',[
-            'title' => 'CreateBatch'
+        return view('pages.admin.department.create',[
+            'title' => 'CreateDepartment'
         ]);
     }
 
@@ -43,46 +42,50 @@ class BatchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Batchrequest $request)
+    public function store(Departmentrequest $request)
     {
         $validatedData = $request->validate([
             'name' => 'required|max:225',
-            'status' => 'required|max:225'
+            'status' => 'required|max:225',
+
         ]);
 
         $validatedData['name'] = $request->name;
         $validatedData['status'] = $request->status;
+        $validatedData['slug'] = Str::slug($request->name);
+
+
 
         //hash password
 
-        Batch::insert($validatedData);
+        Department::insert($validatedData);
 
         //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
-        return redirect('/batch')->with('success', 'Batch Has Been Added!');
+        return redirect('/department')->with('success', 'Department Has Been Added!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Batch  $batch
+     * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
-    public function show(Batch $batch)
+    public function show(Department $department)
     {
-        //
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Batch  $batch
+     * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $item = Batch::findOrFail($id);
+        $item = Department::findOrFail($id);
 
-        return view('pages.admin.batch.edit',[
+        return view('pages.admin.department.edit',[
             'item' => $item
         ]);
     }
@@ -91,30 +94,28 @@ class BatchController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Batch  $batch
+     * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
         $data = $request->all();
 
-        $item = Batch::find($id)->update($data);
+        $data['slug'] = Str::slug($request->name);
+        $item = Department::find($id)->update($data);
 
-        return redirect('/batch')->with('success', 'Batch Has Been Updated!');
+        return redirect('/department')->with('success', 'Department Has Been Added!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Batch  $batch
+     * @param  \App\Models\Department  $department
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Department $item)
     {
-        $item = Batch::find($id);
-
-        $item->delete();
-
-        return back('/batch')->with('success', 'Batch Has Been Deleted!');
+            Department::destroy($item->id);
+            return redirect('/department')->with('success', 'Department Has Been Deleted!');
     }
 }
