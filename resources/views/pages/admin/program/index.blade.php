@@ -54,10 +54,10 @@
                                                 <td>{{ $item->batch->name }}</td>
                                                 <td>{{ $item->status }}</td>
                                                 <td>
-                                                    <a href="{{ url('/updatedepartment', $item->id) }}" class="btn btn-info">
+                                                    <a href="{{ url('/updateprogram', $item->id) }}" class="btn btn-info">
                                                         <i class="fa fa-pencil-alt"></i>
                                                     </a>
-                                                    <form action="{{ url('program', $item->id) }}" method="post"
+                                                    <form action="{{ url('/programadmin', $item->id) }}" method="post"
                                                         class="d-inline">
                                                         @csrf
                                                         @method('delete')

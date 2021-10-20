@@ -13,10 +13,10 @@ class Batch extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'name', 'status'
+        'name', 'status', 'slug'
     ];
 
     protected $hiden = [
-        
+
     ];
 }

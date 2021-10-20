@@ -53,6 +53,7 @@ class BatchController extends Controller
         ]);
 
         $validatedData['name'] = $request->name;
+        $validatedData['slug'] = Str::slug($request->name);
         $validatedData['status'] = $request->status;
 
         //hash password
@@ -60,7 +61,7 @@ class BatchController extends Controller
         Batch::insert($validatedData);
 
         //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
-        return redirect('/batch')->with('success', 'Batch Has Been Added!');
+        return redirect('/master')->with('success', 'Batch Has Been Added!');
     }
 
     /**
@@ -100,9 +101,11 @@ class BatchController extends Controller
     {
         $data = $request->all();
 
+        $data['slug'] = Str::slug($request->name);
         $item = Batch::find($id)->update($data);
 
-        return redirect('/batch')->with('success', 'Batch Has Been Updated!');
+
+        return redirect('/master')->with('success', 'Batch Has Been Updated!');
     }
 
     /**
@@ -117,6 +120,6 @@ class BatchController extends Controller
 
         $item->delete();
 
-        return back('/batch')->with('success', 'Batch Has Been Deleted!');
+        return back('/master')->with('success', 'Batch Has Been Deleted!');
     }
 }

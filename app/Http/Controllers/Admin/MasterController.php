@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Profile;
-use App\Models\Batch;
-use App\Models\Department;
-use App\Models\Experience;
-use App\Models\Education;
-
-
+use App\Http\Controllers\Controller;
+use App\Models\Master;
+use App\Models\batch;
+use App\Models\department;
+use App\Models\program;
 use Illuminate\Http\Request;
 
-class ProfileController extends Controller
+class MasterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,7 +18,15 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        //
+        $departments = Department::all();
+        $batches = batch::all();
+        $programs = program::all();
+
+        return view('pages.admin.master.index',[
+            'departments' => $departments,
+            'batches' => $batches,
+            'programs' => $programs
+        ]);
     }
 
     /**
@@ -47,10 +53,10 @@ class ProfileController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Profile  $profile
+     * @param  \App\Models\Master  $master
      * @return \Illuminate\Http\Response
      */
-    public function show(Profile $profile)
+    public function show(Master $master)
     {
         //
     }
@@ -58,10 +64,10 @@ class ProfileController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Profile  $profile
+     * @param  \App\Models\Master  $master
      * @return \Illuminate\Http\Response
      */
-    public function edit(Profile $profile)
+    public function edit(Master $master)
     {
         //
     }
@@ -70,10 +76,10 @@ class ProfileController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Profile  $profile
+     * @param  \App\Models\Master  $master
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Profile $profile)
+    public function update(Request $request, Master $master)
     {
         //
     }
@@ -81,10 +87,10 @@ class ProfileController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Profile  $profile
+     * @param  \App\Models\Master  $master
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Profile $profile)
+    public function destroy(Master $master)
     {
         //
     }

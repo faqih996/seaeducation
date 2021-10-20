@@ -14,9 +14,10 @@ class CreateBatchesTable extends Migration
     public function up()
     {
         Schema::create('batches', function (Blueprint $table) {
-            $table->id();
+            $table->id()->unique();
             $table->string('name')->unique();
-            $table->string('status')->default('active');
+            $table->string('slug')->unique();
+            $table->string('status');
             $table->softDeletes();
             $table->timestamps('');
         });

@@ -14,7 +14,7 @@ class CreateProfilesTable extends Migration
     public function up()
     {
         Schema::create('profiles', function (Blueprint $table) {
-            $table->id();
+            $table->id()->unique();
             $table->string('pob');
             $table->date('bod');
             $table->string('sex');
@@ -23,7 +23,7 @@ class CreateProfilesTable extends Migration
             $table->string('city');
             $table->string('provience');
             $table->integer('phone');
-            $table->integer('phone2');
+            $table->integer('phone2')->nullable();
             $table->string('hobi');
             $table->timestamps();
         });

@@ -15,11 +15,11 @@ class CreateExperiencesTable extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('corporatename');
-            $table->string('position');
-            $table->date('startfrom');
-            $table->date('enddate');
-            $table->text('description');
+            $table->string('corporatename')->nullable()->unique();
+            $table->string('position')->nullable();
+            $table->date('startfrom')->nullable();
+            $table->date('enddate')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

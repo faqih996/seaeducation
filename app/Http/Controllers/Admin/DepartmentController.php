@@ -61,7 +61,7 @@ class DepartmentController extends Controller
         Department::insert($validatedData);
 
         //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
-        return redirect('/department')->with('success', 'Department Has Been Added!');
+        return redirect('/master')->with('success', 'Department Has Been Added!');
     }
 
     /**
@@ -104,7 +104,7 @@ class DepartmentController extends Controller
         $data['slug'] = Str::slug($request->name);
         $item = Department::find($id)->update($data);
 
-        return redirect('/department')->with('success', 'Department Has Been Added!');
+        return redirect('/master')->with('success', 'Department Has Been Added!');
     }
 
     /**
@@ -116,6 +116,6 @@ class DepartmentController extends Controller
     public function destroy(Department $item)
     {
             Department::destroy($item->id);
-            return redirect('/department')->with('success', 'Department Has Been Deleted!');
+            return redirect('/master')->with('success', 'Department Has Been Deleted!');
     }
 }

@@ -15,16 +15,17 @@ class CreateProgramsTable extends Migration
     {
         Schema::create('programs', function (Blueprint $table) {
             $table->id()->unique();
-            $table->string('title');
-            $table->string('slug');
+            $table->string('title')->unique();
+            $table->string('slug')->unique();
             $table->text('excerpt')->nullable();
-            $table->text('body')->nullable();
-            $table->string('status')->default('active');
+            $table->text('about')->nullable();
+            $table->string('status');
             $table->foreignId('batch_id');
             $table->integer('price');
             $table->date('start_at');
             $table->date('end_at');
-            $table->timestamp('publish_at')->nullable();
+            $table->date('end_reg');
+            $table->timestamp('publish_at');
             $table->timestamps('');
             $table->softDeletes();
         });

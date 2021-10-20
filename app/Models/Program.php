@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
 class Program extends Model
@@ -13,8 +14,8 @@ class Program extends Model
     use softDeletes;
 
     protected $fillable= [
-    'tittle', 'slug', 'body', 'excerpt', 'body', 'location_id',
-    'status', 'batch_id', 'class', 'price', 'start_at', 'end_at'
+    'title', 'slug', 'about',  'excerpt', 'class',
+    'status', 'batch_id', 'price', 'start_at', 'end_at', 'end_reg'
     ];
 
     protected $hidden = [
@@ -29,5 +30,10 @@ class Program extends Model
     public function Department()
     {
         return $this->belongsTo(Department::class);
+    }
+
+    protected function serializeDate(DateTimeInterface $date)
+    {
+        return $date->format('dd-month-Y');
     }
 }

@@ -13,10 +13,10 @@ class ProgramAdminController extends Controller
 {
      public function index(request $request)
     {
-        $items = Program::all();
+        $programs = Program::all();
 
         return view('pages.admin.program.index',[
-            'items' => $items
+            'programs' => $programs
         ]);
     }
 
@@ -33,30 +33,70 @@ class ProgramAdminController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|max:225',
+            'about' => 'max:255',
+            'class' => 'required|max:255',
             'batch_id' => 'required',
-            'start_at' => 'date',
-            'end_at' => 'date',
+            'start_at' => 'date:d-m-Y',
+            'end_at' => 'date:d-m-Y',
+            'end_reg' => 'date:d-m-Y',
+            'status' => 'required|max:255',
             'price' => 'required|max:225',
 
         ]);
 
         $validatedData['title'] = $request->title;
+        $validatedData['class'] = $request->class;
+        $validatedData['about'] = $request->about;
         $validatedData['batch_id'] = $request->batch_id;
         $validatedData['start_at'] = $request->start_at;
         $validatedData['end_at'] = $request->end_at;
+        $validatedData['end_reg'] = $request->end_reg;
         $validatedData['price'] = $request->price;
         $validatedData['slug'] = Str::slug($request->title);
 
         Program::insert($validatedData);
 
         //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
-        return redirect('/program')->with('success', 'Department Has Been Added!');
+        return redirect('/master')->with('success', 'Program Has Been Added!');
     }
 
-    public function destroy(Program $item)
+    public function edit($id)
     {
-        $item = Program::findOrFail($item->id);
-        Program::destroy($item->id);
-        return redirect('program')->with('success', 'Program Has Been Deleted!');
+        $item = Program::findOrFail($id);
+
+        return view('pages.admin.program.edit',[
+            'batches' => Batch::all(),
+            'item' => $item
+        ]);
     }
+
+    public function update(Request $request, $id)
+    {
+        $data = $request->all();
+
+        $item = Program::findOrFail($id);
+
+        $data['slug'] = Str::slug($request->title);
+
+        $item->update($data);
+
+        return redirect('/master')->with('success', 'Program Has Been Edited!');
+    }
+
+    public function destroy(Program $id)
+    {
+        $program = Program::findOrFail($id);
+        $program -> delete();
+        return redirect('/programadmin')->with('success', 'Program Has Been Deleted!');
+    }
+
+
+        /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Program  $department
+     * @return \Illuminate\Http\Response
+     */
+
 }

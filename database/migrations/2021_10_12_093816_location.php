@@ -14,8 +14,10 @@ class Location extends Migration
     public function up()
     {
         Schema::create('Location', function (Blueprint $table) {
-            $table->id();
-            $table->string('location');
+            $table->id()->unique();
+            $table->string('Office')->unique();
+            $table->string('address')->nullable();
+            $table->string('slug')->nullable();
             $table->string('status')->default('Active');
             $table->timestamps();
 

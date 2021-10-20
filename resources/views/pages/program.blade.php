@@ -26,7 +26,7 @@
                                 </p>
 
                                 <div class="button">
-                                    <button href="" class="button btn-secondary ">Kurikulum</button>
+                                    <button href="{{ url('/program/', $item->id) }}" class="button btn-secondary ">Kurikulum</button>
                                     <button href="" class="button btn-login border-1">Daftar Sekarang</button>
                                 </div>
                             </div>

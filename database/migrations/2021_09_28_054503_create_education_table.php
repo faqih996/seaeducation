@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class CreateEducationTable extends Migration
 {
@@ -14,11 +15,12 @@ class CreateEducationTable extends Migration
     public function up()
     {
         Schema::create('education', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('department');
-            $table->date('in');
-            $table->date('out');
+            $table->id()->unique();
+            $table->string('name')->Nullable()->unique();
+            $table->string('department')->nullable();;
+            $table->date('in')->nullable();
+            $table->date('out')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

@@ -23,30 +23,27 @@
                         </p>
                     </div>
                     <div class="item mb-30">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" class="icon me-3" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="0.6" class="icon me-3" viewBox="0 0 16 16">
                             <path
                                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-                                stroke="#7E8CAC" stroke-width="0.99" stroke-linecap="round" stroke-linejoin="round" />
+                                stroke="#7E8CAC" stroke-width="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
 
                         <p class="item-title m-0">
-                            <a href="{{ url('profile') }}" class="text-lg text-decoration-none">Profile</a>
+                            <a href="{{ url('/profile') }}" class="text-lg text-decoration-none">Profile</a>
                         </p>
                     </div>
                     <div class="item mb-30">
-                        <svg class="icon me-3" width="25" height="25" viewBox="0 0 25 25" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="icon me-3" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M6.90332 2.41406L3.90332 6.41406V20.4141C3.90332 20.9445 4.11403 21.4532 4.48911 21.8283C4.86418 22.2033 5.37289 22.4141 5.90332 22.4141H19.9033C20.4338 22.4141 20.9425 22.2033 21.3175 21.8283C21.6926 21.4532 21.9033 20.9445 21.9033 20.4141V6.41406L18.9033 2.41406H6.90332Z"
+                                d="M8 5a1 1 0 0 1 1 1v1H7V6a1 1 0 0 1 1-1zm2 2.076V6a2 2 0 1 0-4 0v1.076c-.54.166-1 .597-1 1.224v2.4c0 .816.781 1.3 1.5 1.3h3c.719 0 1.5-.484 1.5-1.3V8.3c0-.627-.46-1.058-1-1.224z"
                                 stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             <path
-                                d="M16.9033 10.4141C16.9033 11.4749 16.4819 12.4923 15.7317 13.2425C14.9816 13.9926 13.9642 14.4141 12.9033 14.4141C11.8425 14.4141 10.825 13.9926 10.0749 13.2425C9.32475 12.4923 8.90332 11.4749 8.90332 10.4141"
+                                d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"
                                 stroke="#7E8CAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M3.90332 6.41406H21.9033" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+                            </svg>
                         <p class="item-title m-0">
-                            <a href="../member/transactions.html" class="text-lg text-decoration-none">Master Data</a>
+                            <a href="{{ url('/master') }}" class="text-lg text-decoration-none">Master Data</a>
                         </p>
                     </div>
                     <div class="item mb-30">
