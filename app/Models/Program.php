@@ -22,6 +22,11 @@ class Program extends Model
 
     ];
 
+    public function galleries()
+    {
+        return $this->hasMany(Gallery::class, 'program_id', 'id');
+    }
+
     public function batch()
     {
         return $this->belongsTo(Batch::class);

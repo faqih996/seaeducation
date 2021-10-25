@@ -39,6 +39,7 @@ a.nav-link {
   border: 1px;
   padding: 13px 17px 13px 17px;
   font-size: 18px;
+  flex: 1;
 }
 
 .btn-login:hover {
@@ -54,6 +55,7 @@ a.nav-link {
   font-size: 16px;
   font-weight: bold;
   color: #1a3475;
+  flex: 1;
 }
 
 .btn-secondary:hover {
@@ -98,7 +100,7 @@ a.nav-link {
   font-weight: 700;
   color: white;
 }
-.header p {
+.header h3 {
   font-family: "Open Sans";
   font-weight: 400;
   color: white;
@@ -216,8 +218,62 @@ a.nav-link {
   size: 400px;
 }
 
+.section-lecturers-heading {
+  background: linear-gradient(#fff 0%, #f7f9ff 100%);
+  padding-top: 50px;
+  min-height: 506px;
+}
+.section-lecturers-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.section-lecturers-content {
+  margin-top: -300px;
+  padding-bottom: 50px;
+}
+.section-lecturers-content .card-lecturers {
+  padding: 40px 20px 10px;
+  border-radius: 11px;
+  margin-bottom: 20px;
+}
+.section-lecturers-content .card-lecturers .lecturers-content {
+  min-height: 380px;
+}
+.section-lecturers-content .card-lecturers h3 {
+  font-size: 22px;
+}
+.section-lecturers-content .card-lecturers .lecturers {
+  font-size: 26px;
+  text-align: center;
+  color: #6e6e6e;
+  font-weight: 200;
+}
+.section-lecturers-content .card-lecturers .trip-to {
+  font-weight: normal;
+  font-size: 22px;
+  color: #6e6e6e;
+}
+.section-lecturers-content .card-lecturers hr {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.section-lecturers-content .btn-get-started {
+  background-color: #FF9E53;
+  color: #fff;
+}
+.section-lecturers-content .btn-get-started:hover {
+  color: #fff;
+}
+.section-lecturers-content .btn-need-help {
+  background-color: #F2F2F2;
+  color: #C3C3C3;
+}
+.section-lecturers-content .btn-need-help:hover {
+  color: #C3C3C3;
+}
+
 .section-program {
-  background-color: #eceef3;
   padding-top: 20px;
 }
 .section-program h1 {
@@ -288,7 +344,6 @@ a.nav-link {
 
 .testimonial {
   width: 100%;
-  max-height: 900px;
   background: linear-gradient(#3570d9, #1a3475);
   color: white;
   padding-top: 20px;
@@ -506,13 +561,6 @@ a.nav-link {
   color: #071c4d;
 }
 
-@media only screen and (max-width: 768px) {
-  .btn-login,
-.btn-secondary {
-    margin-top: 10px;
-    margin-left: 0 !important;
-  }
-}
 .program-card .btn-login,
 .program-card .btn-secondary {
   margin-top: 10px;
@@ -527,7 +575,8 @@ a.nav-link {
 
 .section-details-header {
   min-height: 310px;
-  background: #e4e6eb;
+  background: #E4E6EB;
+  margin-top: -70px;
 }
 
 .section-details-content {
@@ -680,4 +729,14 @@ a.nav-link {
 .section-details-content .btn-join-now:hover {
   background-color: #ffb57c;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-login,
+.btn-secondary {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    width: 300px;
+    flex: 1;
+  }
 }

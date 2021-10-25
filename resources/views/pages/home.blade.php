@@ -10,21 +10,21 @@
         <!--kiri-->
         <div class="text-md-left my-5">
           <h1 class="mt-4">
-            Mulai karir internasionalmu
+            We Provide the only program's taught by leading industry professionals
             <br />
-            di Hotel dan
+
             <br />
-            Kapal Pesiar
+
           </h1>
-          <p class="mt-3">
-            Sea Education adalah pelatihan dan penyaluran kerja
+          <h3 class="mt-3">
+            guaranteeing a job on board cruise ship and international 5 Stars hotels
             <br />
-            ke hotel dan kapal pesiar.
-          </p>
+            on successful completion
+          </h3>
 
           <div class="text-left my-5">
             <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-              >Daftar Sekarang</a
+              >REGISTER NOW</a
             >
           </div>
         </div>
@@ -46,7 +46,7 @@
         <div class="col-md-6 col-lg-4" data-aos="fade-up">
               <div class="card service-card">
                 <div class="card-body">
-                  <h2 class="card-head-title">KENAPA BEKERJA DIKAPAL PESIAR MENJADI PILIHAN?</h2>
+                  <h2 class="card-head-title">WHY IS WORKING ON A CRUISE SHIP AN OPTION?</h2>
                 </div>
               </div>
         </div>
@@ -57,9 +57,9 @@
                 <img src="{{ url('frontend/assets/cash.png') }}" alt=""  />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Gajian Dollar/Euro</h5>
+                <h5 class="card-title">Dollar/Euro salary</h5>
                 <p class="card-text">
-                  Mendapat gaji dollar / euro + bonus tip yang besar selama bekerja dikapal
+                    Get a dollar / euro salary + a large bonus tip while working on the ship
                 </p>
               </div>
             </div>
@@ -71,9 +71,9 @@
                 <img src="{{ url('frontend/assets/hotel.png') }}" alt="" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Free Akomodasi</h5>
+                <h5 class="card-title">Free Accomodation</h5>
                 <p class="card-text">
-                  Disediakan tempat tinggal dan tidak dipungut biaya apapun
+                    Provided a place to stay and free of charge
                 </p>
               </div>
             </div>
@@ -87,7 +87,7 @@
               <div class="card-body">
                 <h5 class="card-title">Keliling Dunia</h5>
                 <p class="card-text">
-                  Kesempatan bekerja sambil berkunjung kesuatu negara secara Gratis
+                    Opportunity to work while visiting a country for free
                 </p>
               </div>
             </div>
@@ -99,9 +99,9 @@
                 <img src="{{ url('frontend/assets/study.png') }}" alt="" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Minimal Pendidikan</h5>
+                <h5 class="card-title">Minimum Education</h5>
                 <p class="card-text">
-                  Cukup lulusan minimal SMA sudah dapat bekerja dikapal pesiar
+                    It is enough that a minimum high school graduate can work on a cruise ship
                 </p>
               </div>
             </div>
@@ -113,9 +113,9 @@
                 <img src="{{ url('frontend/assets/career.png') }}" alt="" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Karir</h5>
+                <h5 class="card-title">Carrer</h5>
                 <p class="card-text">
-                  Banyak peluang kerja dan karir tersedia di kapal pesiar
+                    Many job and career opportunities are available on cruise ships
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@
         <section class="daftarsekarang">
           <div class="text-align-center my-5">
             <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-              >Daftar Sekarang</a
+              >Register Now</a
             >
           </div>
         </section>
@@ -145,7 +145,7 @@
       Sea Education adalah sekolah kapal pesiar yang menjamin para alumni untuk dapat bekerja di kapal pesiar atau hotel bintang 5. Mengingat banyaknya peminat Sea Education, maka kami kini hadir di 3 kota besar yaitu Jakarta, Medan, dan Bali.
     </p>-->
 
-    <h2 class="section-seaedu-title2">Kenapa Sea Education?</h2>
+    <h2 class="section-seaedu-title2">Why Sea Education?</h2>
     <span class="section-seaeducation-line"></span>
   </div>
 
@@ -156,9 +156,9 @@
           <img src="{{ url('frontend/assets/mentor.png') }}" alt="" />
         </div>
         <div class="card-body ">
-          <h5 class="card-seaedu-title">Mentor Professional</h5>
+          <h5 class="card-seaedu-title">profesionals Mentor</h5>
           <p class="card-seatext">
-            Mentor merupakan professional dan expert di bidangnya
+            Reliable and professional instructors Mentors are professionals and experts in their fields
           </p>
         </div>
       </div>
@@ -170,9 +170,9 @@
           <img src="{{ url('frontend/assets/consultancy.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Free Konsultasi karir</h5>
+          <h5 class="card-seaedu-title">Free career consultation services</h5>
           <p class="card-seatext">
-            Berkonsulatsi karir dan peluang kerja tanpa khawatir dan ribet
+            Career consultation and job opportunities without worry and hassle
           </p>
         </div>
       </div>
@@ -198,9 +198,9 @@
           <img src="{{ url('frontend/assets/training.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Praktek Kerja</h5>
+          <h5 class="card-seaedu-title">On the Job Training</h5>
           <p class="card-seatext">
-            Program Praktek langsung di Hotel dan Restaurant berbintang 4-5
+            at International Hotels Malaysia, Singapore, China, Maldives, Thailand, etc and get paid
           </p>
         </div>
       </div>
@@ -212,9 +212,9 @@
           <img src="{{ url('frontend/assets/hiring.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Jaminan Kerja</h5>
+          <h5 class="card-seaedu-title">Guaranteed Job</h5>
           <p class="card-seatext">
-            100% jaminan PASTI kerja dan Disalurkan secara TEPAT
+            On board cruise ship or international hotel
           </p>
         </div>
       </div>
@@ -226,9 +226,9 @@
           <img src="{{ url('frontend/assets/document.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">FREE Dokumen Kepelautan</h5>
+          <h5 class="card-seaedu-title">Lowest and affordable course fee</h5>
           <p class="card-seatext">
-            Tak perlu khawatir dengan tambahan biaya pengurusan dokumen
+            No need to worry about costs
           </p>
         </div>
       </div>
@@ -236,6 +236,90 @@
   </div>
 </section>
 <!--apa itu sea education end-->
+
+
+<!--lecturer-->
+<section class="section-lecturers-heading" id="testimonialsHeading">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Our Mentors</h2>
+          <p>
+            Great Mentors
+            <br />
+            with best experience
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-lecturers-content" id="testimonialsContent">
+    <div class="container">
+      <div
+        class="section-popular-travel row justify-content-center match-height"
+      >
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card card-lecturers text-center">
+            <div class="lecturers-content">
+              <img
+                src="{{ url('frontend/assets/monica.png') }}"
+                height="150px" width="150px"
+                alt=""
+                class="mb-4 rounded-circle"
+              />
+              <h3 class="mb-4">Angga Risky</h3>
+              <p class="lecturers">
+                “ It was glorious and I could not stop to say wohooo for
+                every single moment Dankeeeeee “
+              </p>
+            </div>
+            <hr />
+            <p class="trip-to mt-2">Trip to Ubud</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card card-lecturers text-center">
+            <div class="lecturers-content">
+              <img
+                src="{{ url('frontend/assets/ari.png') }}"
+                height="150px" width="150px"
+                alt=""
+                class="mb-4 rounded-circle"
+              />
+              <h3 class="mb-4">Shayna</h3>
+              <p class="lecturers">
+                “ The trip was amazing and I saw something beautiful in that
+                Island that makes me want to learn more “
+              </p>
+            </div>
+            <hr />
+            <p class="trip-to mt-2">Trip to Nusa Penida</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card card-lecturers text-center">
+            <div class="lecturers-content mb-auto">
+              <img
+                src="{{ url('frontend/assets/pak nurman.png') }}"
+                height="150px" width="150px"
+                alt=""
+                class="mb-4 rounded-circle"
+              />
+              <h3 class="mb-4">Shabrina</h3>
+              <p class="lecturers">
+                “ I loved it when the waves was shaking harder — I was
+                scared too “
+              </p>
+            </div>
+            <hr />
+            <p class="trip-to mt-2">Trip to Karimun Jawa</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!--endlectur-->
 
 <!--program-->
 <section class="section-program">
@@ -248,7 +332,7 @@
 
         <div class="container">
             <div class="row row-cols-3 row-cols-md-4 mb-4">
-                @foreach($program as $program)
+                @foreach($programs as $program)
                 <div class="justify-content-between col-md-4">
                     <div class="col">
                         <div class="card program-card mb-4">
@@ -280,25 +364,6 @@
     </div>
 </section>
 <!--programend-->
-
-<!--lecturer-->
-<section class="section-lecturer" id="lecturer">
-    <div class="container">
-        <h1 class="section-tittle mt-4 my-2 align-content-center">
-            Mentor di Sea Education
-        </h1>
-        <span class="section-lecturer-line"></span>
-      </div>
-    <div class="container align-content-center">
-        <div class="card" style="width: 14rem;">
-            <img src="{{ url('frontend/assets/kapal.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!--endlectur-->
 
 
 <!--partner-->
@@ -347,249 +412,249 @@
 
 
 <!--testimoni-->
-  <section class="testimonial">
-      <div class="container">
-        <h1 class="section-tittle mt-4">
-            Pendapat mereka tentang Sea Education
-        </h1>
-        <span class="section-testimonial-line"></span>
-      </div>
+<section class="testimonial">
+    <div class="container">
+      <h1 class="section-tittle mt-4">
+          Pendapat mereka tentang Sea Education
+      </h1>
+      <span class="section-testimonial-line"></span>
+    </div>
 
-        <div class="testimonials-carousel-wrap">
-          <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
-          <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
+      <div class="testimonials-carousel-wrap">
+        <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
+        <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
 
-          <div class="testimonials-carousel">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="testi-item">
-                      <div class="testi-avatar"><img src="{{ url('frontend/assets/7@2x.jpg') }}"></div>
-                      <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                      <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Sangat senang bisa belajar di Sea Education, dengan materi yang asik dan mentor yang profesional, penuh praktek sehingga mudah untuk dimengerti</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Sohmo Happy</h3>
-                                          <h4>Batch 5 Medan</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+        <div class="testimonials-carousel">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testi-item">
+                    <div class="testi-avatar"><img src="{{ url('frontend/assets/7@2x.jpg') }}"></div>
+                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                    <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Sangat senang bisa belajar di Sea Education, dengan materi yang asik dan mentor yang profesional, penuh praktek sehingga mudah untuk dimengerti</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Sohmo Happy</h3>
+                                        <h4>Batch 5 Medan</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--second--->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/8@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Selama pelatihan mentor selalu detail dan langsung ke realita dunia kerja, membuat saya yakin untuk menghadapi dunia kerja dikapal pesiar </p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Joshua Raya</h3>
-                                          <h4>Batch 5 Medan</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--second--->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/8@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Selama pelatihan mentor selalu detail dan langsung ke realita dunia kerja, membuat saya yakin untuk menghadapi dunia kerja dikapal pesiar </p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Joshua Raya</h3>
+                                        <h4>Batch 5 Medan</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--third-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/9@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Kualitas pelatihannya sangat luar biasa, tanpa basic perhotelan saya tetap dapat mengikutinya dan dengan pembayaran yang flexible</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Reyhansyah Putra</h3>
-                                          <h4>Batch 3 Medan</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--third-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/9@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Kualitas pelatihannya sangat luar biasa, tanpa basic perhotelan saya tetap dapat mengikutinya dan dengan pembayaran yang flexible</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Reyhansyah Putra</h3>
+                                        <h4>Batch 3 Medan</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--nine-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/14@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Pendidikannya gak cuma fokus ke pekerjaan tapi juga personal dan kemampuan berbicara bahasa asing, sehingga saat interview sudah tidak pakai hafalan soal lagi deh</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Aulia Khairunisa</h3>
-                                          <h4>Batch 4 Jakarta</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--nine-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/14@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Pendidikannya gak cuma fokus ke pekerjaan tapi juga personal dan kemampuan berbicara bahasa asing, sehingga saat interview sudah tidak pakai hafalan soal lagi deh</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Aulia Khairunisa</h3>
+                                        <h4>Batch 4 Jakarta</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--ten-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/15@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Saya sempat bingung untuk berkarier namun saya sangat percaya saya mampu bekerja di hospitality internasional, saya pun mengikuti pelatihan sea education dan kini saya sedang menunggu jadwal keberangkatan saya.</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Elsa Sinaga</h3>
-                                          <h4>Batch 4 Jakarta</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--ten-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/15@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Saya sempat bingung untuk berkarier namun saya sangat percaya saya mampu bekerja di hospitality internasional, saya pun mengikuti pelatihan sea education dan kini saya sedang menunggu jadwal keberangkatan saya.</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Elsa Sinaga</h3>
+                                        <h4>Batch 4 Jakarta</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--eleven-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/16@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Pendidikan di Sea Education sangat menarik bahkan walaupun saya sudah memiliki pengalaman kerja, saya masih mendapat banyak pelajaran baru, mentornya juga bersedia memberikan arahan secara pribadi diluar kelas</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Daru Kusuma S</h3>
-                                          <h4>Batch 4 Jakarta</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--eleven-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/16@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Pendidikan di Sea Education sangat menarik bahkan walaupun saya sudah memiliki pengalaman kerja, saya masih mendapat banyak pelajaran baru, mentornya juga bersedia memberikan arahan secara pribadi diluar kelas</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Daru Kusuma S</h3>
+                                        <h4>Batch 4 Jakarta</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--fourth-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/11@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Kini saya sudah bekerja di kapal pesiar dan menikmati hasil usaha saya berlajar di Sea Education. Saya bangga pernah belajar di Sea Education</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Putu Sudarma Yasa</h3>
-                                          <h4>Batch 1 Bali</h4>
-                                          <h4>Waiter at Explorer Dream Cruise Line</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--fourth-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/11@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Kini saya sudah bekerja di kapal pesiar dan menikmati hasil usaha saya berlajar di Sea Education. Saya bangga pernah belajar di Sea Education</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Putu Sudarma Yasa</h3>
+                                        <h4>Batch 1 Bali</h4>
+                                        <h4>Waiter at Explorer Dream Cruise Line</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--seven-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/12@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Saat saya belajar di Sea Education pengetahuan saya bertambah dan sekarang saya telah meraih mimpi saya bekerja dikapal pesiar, saya akan berusaha untuk terus meningkatkan karir saya</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Andre Dian Wijaya</h3>
-                                          <h4>Batch 1 Bali</h4>
-                                          <h4>Housekeeping at Explorer Dream Cruise Line</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
+                        <!--seven-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/12@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Saat saya belajar di Sea Education pengetahuan saya bertambah dan sekarang saya telah meraih mimpi saya bekerja dikapal pesiar, saya akan berusaha untuk terus meningkatkan karir saya</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Andre Dian Wijaya</h3>
+                                        <h4>Batch 1 Bali</h4>
+                                        <h4>Housekeeping at Explorer Dream Cruise Line</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
 
-                          <!--eight-->
-                          <div class="swiper-slide">
-                              <div class="testi-item">
-                                  <div class="testi-avatar"><img src="{{ url('frontend/assets/13@2x.jpg') }}"></div>
-                                  <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
-                                  <div class="testimonials-text">
-                                      <div class="listing-rating">
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                          <i class="fa fa-star"></i>
-                                      </div>
-                                      <p>Awalnya saya ragu untuk berkarier di kapal pesiar, setelah saya ikuti pelatihan sea education saya mendapat pengetahuan membuat saya akhirnya berkarir dikapal pesiar dan berkeliling dunia seperti yang saya inginkan</p>
-                                      <a href="#" class="text-link"></a>
-                                      <div class="testimonials-avatar">
-                                          <h3>Putu Ayu Astiti</h3>
-                                          <h4>Batch 1 Bali</h4>
-                                          <h4>Bar Waiter at Explorer Dream Cruise Line</h4>
-                                      </div>
-                                  </div>
-                                  <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
-                              </div>
-                          </div>
-                          <!--testi end-->
+                        <!--eight-->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testi-avatar"><img src="{{ url('frontend/assets/13@2x.jpg') }}"></div>
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>Awalnya saya ragu untuk berkarier di kapal pesiar, setelah saya ikuti pelatihan sea education saya mendapat pengetahuan membuat saya akhirnya berkarir dikapal pesiar dan berkeliling dunia seperti yang saya inginkan</p>
+                                    <a href="#" class="text-link"></a>
+                                    <div class="testimonials-avatar">
+                                        <h3>Putu Ayu Astiti</h3>
+                                        <h4>Batch 1 Bali</h4>
+                                        <h4>Bar Waiter at Explorer Dream Cruise Line</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div>
+                            </div>
+                        </div>
+                        <!--testi end-->
 
-                      </div>
-                  </div>
-              </div>
+                    </div>
+                </div>
+            </div>
 
-              <div class="tc-pagination"></div>
-          </div>
+            <div class="tc-pagination"></div>
         </div>
       </div>
-  </section>
+    </div>
+</section>
 <!--testimoniend-->
 
 
@@ -598,7 +663,7 @@
           <div class="text-align-center">
             <h3>Siap Kemudikan Masa Depanmu?</h3>
             <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-              >Daftar Sekarang</a
+              >Register Now</a
             >
           </div>
         </section>

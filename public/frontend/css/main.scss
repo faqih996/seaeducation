@@ -39,6 +39,7 @@ a.nav-link {
     border: 1px;
     padding: 13px 17px 13px 17px;
     font-size: 18px;
+    flex: 1;
 }
 
 .btn-login:hover {
@@ -54,6 +55,7 @@ a.nav-link {
     font-size: 16px;
     font-weight: bold;
     color: #1a3475;
+    flex: 1;
 }
 
 .btn-secondary:hover {
@@ -100,7 +102,7 @@ a.nav-link {
         color: white;
     }
 
-    p {
+    h3 {
         font-family: "Open Sans";
         font-weight: 400;
         color: white;
@@ -238,8 +240,76 @@ a.nav-link {
     }
 }
 
+//mentor
+.section-lecturers-heading {
+    background: linear-gradient(#fff 0%, #f7f9ff 100%);
+    padding-top: 50px;
+    min-height: 506px;
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+    }
+  }
+
+  .section-lecturers-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+
+    .card-lecturers {
+      padding: 40px 20px 10px;
+      border-radius: 11px;
+      margin-bottom: 20px;
+
+      .lecturers-content {
+        min-height: 380px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      .lecturers {
+        font-size: 26px;
+        text-align: center;
+        color: #6e6e6e;
+        font-weight: 200;
+      }
+
+      .trip-to {
+        font-weight: normal;
+        font-size: 22px;
+        color: #6e6e6e;
+      }
+
+      hr {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+    }
+
+    .btn-get-started {
+      background-color: #FF9E53;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .btn-need-help {
+      background-color: #F2F2F2;
+      color: #C3C3C3;
+
+      &:hover {
+        color: #C3C3C3;
+      }
+    }
+  }
+//endmentor
+
+//program
 .section-program {
-    background-color: #eceef3;
     padding-top: 20px;
     h1 {
         font-weight: normal;
@@ -315,10 +385,11 @@ a.nav-link {
         }
     }
 }
+//endprogram
 
+//testimonial
 .testimonial {
     width: 100%;
-    max-height: 900px;
     background: linear-gradient(#3570d9, #1a3475);
     color: white;
     padding-top: 20px;
@@ -506,6 +577,7 @@ a.nav-link {
     height: 10px;
     transition: all 300ms ease-in-out;
 }
+//endtestimonial
 
 //footer
 .section-footer {
@@ -515,13 +587,7 @@ a.nav-link {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .btn-login,
-    .btn-secondary {
-        margin-top: 10px;
-        margin-left: 0 !important;
-    }
-}
+
 
 .program-card {
     .btn-login,
@@ -540,9 +606,9 @@ a.nav-link {
 
 .section-details-header {
     min-height: 310px;
-    background: #e4e6eb;
-}
-
+    background: #E4E6EB;
+    margin-top: -70px;
+  }
 .section-details-content {
     margin-top: -210px;
     min-height: 100vh;
@@ -745,6 +811,17 @@ a.nav-link {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .btn-login,
+    .btn-secondary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+        width: 300px;
+        flex: 1;
+    }
+}
+
 @mixin at2x($path, $ext: "jpg, svg, png", $w: auto, $h: auto) {
     $at1x_path: "#{$path}.#{$ext}";
     $at2x_path: "#{$path}@2x.#{$ext}";

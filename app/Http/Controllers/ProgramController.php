@@ -21,18 +21,13 @@ class ProgramController extends Controller
         ]);
     }
 
-    public function show($slug)
+    public function show(program $slug)
     {
+        $program = program::where('slug', $slug);
 
-        return view('pages.programs.kurikulum',[
-            "program"=> Program::find($slug)
+        return view('pages.programs.detail',[
+            "program"=> $program
         ]);
-
-    }
-
-
-    public function destroy(Program $item)
-    {
 
     }
 

@@ -2,7 +2,7 @@
 <div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-White">
     <div class="container-fluid">
-      <a class="navbar-brand align-self-center" href="{{ url('home') }}">
+      <a class="navbar-brand align-self-center" href="{{ url('/') }}">
         <img
           src="{{ url('frontend/assets/logoseaedu2@2x.png') }}"
           alt=""
@@ -25,34 +25,20 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active align-self-center">
+          <li class="nav-item align-self-center">
             <a class="nav-link " href=""
-              >Dukungan <span class="sr-only"></span
+              >Office <span class="sr-only"></span
             ></a>
           </li>
-          <li class="nav-item align-self-center dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href=""
-              id="navbardrop"
-              data-toggle="dropdown"
-            >
-              Program
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="">Regular</a>
-              <a class="dropdown-item" href="">Executive</a>
-              <a class="dropdown-item" href="">Sea Consultancy</a>
-            </div>
-          </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link " href="">Kelas</a>
+            <a class="nav-link " href="{{ url('program') }}" >Program</a>
+          </li>
           </li>
 
           <li>
           @auth
             <li class="nav-item align-self-center">
-                <a class="nav-link " href="{{ url('dashboard') }}">Dashboard</a>
+                <a class="nav-link " href="{{ url('dashboard') }}">Profile</a>
             </li>
             <!-- daftar<a class="nav-link " href="">Welcome, //{/{ //auth()->user()->name }}</a>-->
             <li>

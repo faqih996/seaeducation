@@ -1,11 +1,11 @@
 <link
 rel="stylesheet"
-href="frontend/libraries/bootstrap/css/bootstrap.css"
+href="{{ url('frontend/libraries/bootstrap/css/bootstrap.css') }}"
 />
 
 <link
 rel="stylesheet"
-href="frontend/css/main.css" />
+href="{{ url('frontend/css/main.css') }}" />
 
 <link
 rel="stylesheet"

@@ -11,10 +11,10 @@ class HomeController extends Controller
 {
     public function index(request $request)
     {
-        $program = Program::all();
+        $programs = Program::all();
 
         return view('pages.home',[
-            'program' => $program,
+            'programs' => $programs,
             'title' => 'Seaeducation',
             'active' => 'home'
 
