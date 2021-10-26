@@ -1,3 +1,14 @@
+
+<section class="top-banner">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12 col-12 text-center">
+        Beli 1 Kelas Premium BONUS 1 Kelas Premium (bebas pilih) <a href="https://www.instagram.com/p/CVUyAjnFGEL/" target="_blank">Lihat Promo</a>
+    </div>
+    </div>
+    </div>
+    </section>
+
 <!--navbar-->
 <div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light bg-White">
