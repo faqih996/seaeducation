@@ -17,7 +17,6 @@ body {
     font-weight: 400;
     line-height: 1.5;
     background-color: #fff;
-
 }
 
 //navbar&button
@@ -235,17 +234,16 @@ a.nav-link {
 .section-networks {
     background-color: #fff;
     margin-top: 10px;
-    padding-right : 50px;
+    padding-right: 50px;
     padding-left: 50px;
     color: #071c4d;
 
     h2 {
         font-family: "Open Sans", serif;
         font-weight: bold;
-
     }
 
-    .item{
+    .item {
         padding: 5px;
         border-radius: 16px;
         background: #fff;
@@ -257,22 +255,19 @@ a.nav-link {
     }
 }
 
-
 //try mentor
-.section-lecturers{
+.section-lecturers {
     padding: 50px;
     position: relative;
     padding-right: 20px;
     padding-left: 20px;
     margin-top: 20px;
 
-    .lecturer-header{
-
+    .lecturer-header {
         font-weight: bold;
         text-align: center;
         font-weight: bold;
         color: #101c38;
-
     }
 
     .section-seaeducation-line {
@@ -283,7 +278,7 @@ a.nav-link {
         display: block;
     }
 
-    .item{
+    .item {
         border: 10px;
         border-color: #071c4d;
         border-radius: 10px;
@@ -293,16 +288,14 @@ a.nav-link {
         background: #fff;
         margin-bottom: 40px;
 
-
-        h2{
+        h2 {
             color: #2447f9;
         }
 
-        h5{
+        h5 {
             color: #2447f9;
         }
     }
-
 }
 //try mentor end
 
@@ -314,8 +307,7 @@ a.nav-link {
     padding-left: 20px;
     margin-top: 5px;
 
-
-    .section-program-title{
+    .section-program-title {
         font-weight: bold;
         text-align: center;
         font-weight: bold;
@@ -329,7 +321,6 @@ a.nav-link {
         margin: 20px auto;
         display: block;
     }
-
 
     .program-card {
         border-radius: 10px;
@@ -613,8 +604,6 @@ a.nav-link {
     }
 }
 
-
-
 .program-card {
     .btn-login,
     .btn-secondary {
@@ -627,14 +616,15 @@ a.nav-link {
     border-radius: 10px;
     padding: 25px;
 }
+das
 
 //detailpage
 
 .section-details-header {
     min-height: 310px;
-    background: #E4E6EB;
+    background: #e4e6eb;
     margin-top: -70px;
-  }
+}
 .section-details-content {
     margin-top: -210px;
     min-height: 100vh;
