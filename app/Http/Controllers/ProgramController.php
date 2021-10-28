@@ -21,9 +21,8 @@ class ProgramController extends Controller
         ]);
     }
 
-    public function show(program $slug)
+    public function show(program $program)
     {
-        $program = program::where('slug', $slug);
 
         return view('pages.programs.detail',[
             "program"=> $program
