@@ -1,3 +1,10 @@
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
 .top-banner {
   background: #2447f9;
   color: #fff;
@@ -10,13 +17,6 @@
   color: #fff;
   text-decoration: underline;
   font-weight: 500;
-}
-
-body {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  background-color: #fff;
 }
 
 .navbar-brand {
@@ -233,21 +233,38 @@ a.nav-link {
   text-align: center;
 }
 
-.section-networks {
+.section-partners {
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 40px;
   padding-right: 50px;
   padding-left: 50px;
   color: #071c4d;
 }
 
-.section-networks h2 {
-  font-family: "Open Sans", serif;
+.section-partners .inside {
+  padding: 30px;
+}
+
+.section-partners h1 {
+  font: "Open Sans", serif;
+  font-size: 40px;
   font-weight: bold;
 }
 
-.section-networks .item {
-  padding: 5px;
+.section-partners p {
+  font-size: 22px;
+}
+
+.section-partners .section-seaeducation-line {
+  width: 160px;
+  height: 5px;
+  margin: 20px 0px 20px 0px;
+  background: #101c38;
+  display: block;
+}
+
+.section-partners .partners-card {
+  padding: 15px;
   border-radius: 16px;
   background: #fff;
   margin-bottom: 10px;
@@ -255,8 +272,18 @@ a.nav-link {
           box-shadow: 0 9px 26px rgba(107, 109, 112, 0.45);
 }
 
-.section-networks img {
-  size: 400px;
+.section-partners .partner-item {
+  padding: 10px;
+}
+
+.section-partners .partner-item img.img-patner {
+  image-resolution: 300px;
+  height: auto;
+  width: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 20px;
+  margin: 20px;
 }
 
 .section-lecturers {

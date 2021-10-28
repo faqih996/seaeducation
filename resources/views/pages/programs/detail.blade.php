@@ -14,6 +14,7 @@
                     <ul class="mt-4">
                         <li class="department-list"><a class="department-name" href="">{{ $department->name }}</a></li>
                     </ul>
+
                 @endforeach
 
                 <div class="text-left my-5">

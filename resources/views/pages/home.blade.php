@@ -327,187 +327,6 @@
     </div>
 </section>
 
-<!-- item bwa
-            <div class="col-lg-3 col-12">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_konsultasi.svg" class="icon mb-5">
-                    <h2 class="title">
-                        Konsultasi
-                    </h2>
-                    <p class="capt mt-3">
-                        Gabung dengan private group untuk <br class="desktop">
-                        berkonsultasi dengan mentor kelas
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_access.svg" class="icon mb-5">
-                    <h2 class="title">
-                    Lifetime Access
-                    </h2>
-                    <p class="capt mt-3">
-                    Mempelajari dan memahami materi <br class="desktop">
-                    kelas lebih santai tanpa batasan waktu
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12 d-none d-sm-block">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_project.svg" class="icon mb-5">
-                    <h2 class="title">
-                    Portfolio
-                    </h2>
-                    <p class="capt mt-3">
-                    Pelajari dan miliki hasil karya untuk <br class="desktop">
-                    membangun karir masa depan
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12 d-none d-sm-block">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_design.svg" class="icon mb-5">
-                    <h2 class="title">
-                    Pixel Matters
-                    </h2>
-                    <p class="capt mt-3">
-                    Projek kelas yang kita bangun <br class="desktop">
-                    memiliki konsep design yang baik
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12 d-none d-sm-block">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_offline.svg" class="icon mb-5">
-                    <h2 class="title">
-                    Offline Mode
-                    </h2>
-                    <p class="capt mt-3">
-                    Pelajari materi kelas tanpa <br class="desktop">
-                    harus terhubung dengan Internet
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12 d-none d-sm-block">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_bahasa.svg" class="icon mb-5">
-                    <h2 class="title">
-                    #ProdukLokal
-                    </h2>
-                    <p class="capt mt-3">
-                    Materi dibuat langsung oleh para <br class="desktop">
-                    kreator di negara Indonesia
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-12 d-none d-sm-block">
-                <div class="item">
-                    <img src="https://buildwithangga.com/themes/front/images/ic_sertifikat.svg" class="icon mb-5">
-                    <h2 class="title">
-                    Bersertifikat Resmi
-                    </h2>
-                    <p class="capt mt-3">
-                    Selesaikan kelas dan projek dan <br class="desktop">
-                    dapatkan sertifikat dari kami
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
--->
-
-<!--lecturer
-<section class="section-lecturers-heading" id="testimonialsHeading">
-    <div class="container-fluid">
-        <div class="row mb-5">
-            <div class="col-lg-10 col-10 text-left">
-                <h2 class="header-primary">
-                     Platform Belajar Online <br class="desktop">
-                    Berkurikulum Internasional </h2>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="section-lecturers-content" id="testimonialsContent">
-    <div class="container-fluid">
-      <div
-        class="section-popular-travel row justify-content-center match-height"
-      >
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card card-lecturers text-center">
-            <div class="lecturers-content">
-              <img
-                src="{{ url('frontend/assets/monica.png') }}"
-                height="150px" width="150px"
-                class="my-3"
-                alt=""
-                class="mb-4 rounded-circle"
-              />
-              <h3 class="mb-4">Angga Risky</h3>
-              <p class="lecturers">
-                “ It was glorious and I could not stop to say wohooo for
-                every single moment Dankeeeeee “
-              </p>
-            </div>
-            <hr />
-            <p class="trip-to mt-2">Trip to Ubud</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card card-lecturers text-center">
-            <div class="lecturers-content">
-              <img
-                src="{{ url('frontend/assets/ari.png') }}"
-                height="150px" width="150px"
-                class="my-3"
-                alt=""
-                class="mb-4 rounded-circle"
-              />
-              <h3 class="mb-4">Shayna</h3>
-              <p class="lecturers">
-                “ The trip was amazing and I saw something beautiful in that
-                Island that makes me want to learn more “
-              </p>
-            </div>
-            <hr />
-            <p class="trip-to mt-2">Trip to Nusa Penida</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-4">
-          <div class="card card-lecturers text-center">
-            <div class="lecturers-content mb-auto">
-              <img
-                src="{{ url('frontend/assets/pak nurman.png') }}"
-                height="150px" width="150px"
-                class="my-3"
-                alt=""
-                class="mb-4 rounded-circle"
-              />
-              <h3 class="mb-4">Shabrina</h3>
-              <p class="lecturers">
-                “ I loved it when the waves was shaking harder — I was
-                scared too “
-              </p>
-            </div>
-            <hr />
-            <p class="trip-to mt-2">Trip to Karimun Jawa</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-endlectur-->
-
 <!--program-->
 <section class="section-program">
     <div class="container-fluid">
@@ -551,33 +370,70 @@ endlectur-->
 
 
 <!--partner-->
-<section class="section-networks" id="networks">
-    <div class="container-fluid">
+<section class="section-partners" id="partners">
+    <div class="container-fluid align-self-center">
         <div class="row">
-            <div class="col-4">
-                <h2>Perusahaan Rekanan</h2>
-                <p>
-                Bekerja sama dengan Hotel
-                <br />
-                dan Agency terbaik di Indonesia & Dunia
-                </p>
-            </div>
-
-            <div class="col-lg-2 col-3">
-                <div class="item">
-                    <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
+            <div class="col-5">
+                <div class="inside">
+                    <h1>Begin Your International </br> Hospitality Career</h1>
+                        <span class="section-seaeducation-line"></span>
+                    <p>
+                        You also have the opportunity to build a career </br> in your dream company
+                        and Travel the World
+                    </p>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-3">
-                <div class="item align-top">
-                    <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
+            <div class="col-md-3 col-3">
+                <div class="card partners-card shadow">
+                    <div class="card-body ">
+                        <p class="badge rounded-pill bg-color"></p>
+                        <h1 class="title">90</h1>
+                            <h3 class="card-week">
+                                Perusahaan Rekanan </h3>
+                            <p class="card-text">
+                                Bekerjasama dengan Hotel & Agency terbaik di Indonesia.
+                            </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-3">
-                <div class="item">
-                    <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
+            <div class="col-md-3 col-3">
+                <div class="card partners-card shadow">
+                    <div class="card-body ">
+                        <p class="badge rounded-pill bg-color"></p>
+                        <h1 class="title">371</h1>
+                            <h3 class="card-week">
+                                Alumi Terbaik </h3>
+                            <p class="card-text">
+                                menghasilkan alumni yang dengan kemampuan mempuni
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="partner my-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -820,14 +676,14 @@ endlectur-->
 
 
 <!--daftarsekarang-->
-        <section class="daftarsekarang2">
-          <div class="text-align-center">
-            <h3>Siap Kemudikan Masa Depanmu?</h3>
-            <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-              >Register Now</a
+<section class="daftarsekarang2">
+    <div class="text-align-center">
+        <h3>Siap Kemudikan Masa Depanmu?</h3>
+        <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
+          >Register Now</a
             >
-          </div>
-        </section>
+    </div>
+</section>
 <!--daftarsekarang end-->
 
 
