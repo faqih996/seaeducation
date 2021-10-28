@@ -247,8 +247,8 @@ a.nav-link {
 }
 .section-partners .partner-item img.img-patner {
   image-resolution: 300px;
-  height: auto;
-  width: auto;
+  height: 200px;
+  width: 200px;
   align-self: flex-start;
   padding: 20px;
   margin: 20px;

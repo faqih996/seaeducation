@@ -434,6 +434,32 @@
                             <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
                         </div>
                     </div>
+
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/polonia.jpg') }}" class="img-patner" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/jambuluwuk.png') }}" class="img-patner" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/cambridge.jpg') }}" class="img-patner" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/aston.jpg') }}" class="img-patner" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-3">
+                        <div class="partner-item">
+                            <img src="{{ url('frontend/assets/trans-hotel.jpg') }}" class="img-patner" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
