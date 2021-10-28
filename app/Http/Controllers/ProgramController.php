@@ -23,9 +23,10 @@ class ProgramController extends Controller
 
     public function show(program $program)
     {
-
+        $departments = Department::all();
         return view('pages.programs.detail',[
-            "program"=> $program
+            "program"=> $program,
+            "departments"=> $departments
         ]);
 
     }

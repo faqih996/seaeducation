@@ -2,20 +2,23 @@
 
 @section('content')
 <!--header-->
-    <section class="program-details">
+    <section class="section-program-details">
         <div class="container">
             <div class="row">
             <section class="col kiri align-self-center">
                 <!--kiri-->
                 <div class="text-md-left my-5">
-                <h1 class="mt-4">
+                <h1 class="mt-4">{{ $program->title }}</h1>
 
-
-                </h1>
+                @foreach($departments as $department)
+                    <ul class="mt-4">
+                        <li class="department-list"><a class="department-name" href="">{{ $department->name }}</a></li>
+                    </ul>
+                @endforeach
 
                 <div class="text-left my-5">
                     <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-                    >REGISTER NOW</a
+                    >Register Now</a
                     >
                 </div>
                 </div>

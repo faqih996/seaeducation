@@ -620,170 +620,26 @@ a.nav-link {
 //detailpage
 
 .section-program-details {
-    min-height: 310px;
-    background: #e4e6eb;
-    margin-top: -70px;
-}
-.section-details-content {
-    margin-top: -210px;
-    min-height: 100vh;
+    background: linear-gradient(#3570d9, #1a3475);
+    color: #fff;
 
-    .breadcrumb {
-        background-color: transparent;
-        padding: 0;
-        margin-bottom: 30px;
+    h1 {
+        font-size: 58px;
     }
 
-    .breadcrumb-item {
-        &.active {
-            font-weight: bold;
-            color: #071c4d;
-        }
-    }
+    ul {
+        li {
+            color: #e68b03;
+            size: 24px;
+            border-radius: 30px;
+            border: #e68b03;
+            border-width: 30px;
 
-    .card-details {
-        padding: 30px;
-        border-radius: 11px;
-
-        h1 {
-            font-size: 26px;
-        }
-
-        h2 {
-            font-size: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #b1b1b1;
-        }
-
-        h3 {
-            font-weight: 300;
-            font-size: 14px;
-            color: #071c4d;
-        }
-
-        .trip-informations {
-            th {
-                font-weight: 300;
-                font-size: 18px;
-                color: #071c4d;
+            a {
+                color: white;
+                text-decoration: none;
+                font: 24px bold;
             }
-
-            td {
-                font-weight: 300;
-                font-size: 18px;
-                color: #b1b1b1;
-            }
-
-            .text-blue {
-                color: #071c4d;
-                font-weight: bold;
-            }
-
-            .text-orange {
-                color: #ff9e53;
-                font-weight: bold;
-            }
-        }
-
-        .payment-instructions {
-            font-weight: 300;
-            font-size: 14px;
-            color: #b1b1b1;
-        }
-
-        .bank {
-            .bank-item {
-                h3 {
-                    font-size: 18px;
-                    color: #071c4d;
-                    margin-bottom: 0;
-                }
-
-                p {
-                    margin-bottom: 0;
-                }
-
-                .description {
-                    margin-left: 10px;
-                    overflow: hidden;
-                    float: left;
-
-                    p {
-                        font-weight: normal;
-                        font-size: 16px;
-                        color: #071c4d;
-                    }
-                }
-            }
-
-            .bank-image {
-                width: 45px;
-                height: 45px;
-                float: left;
-            }
-        }
-
-        .disclaimer {
-            font-weight: 300;
-            font-size: 14px;
-            color: #b1b1b1;
-        }
-
-        .gj-datepicker {
-            .datepicker {
-                border-right: 0;
-            }
-
-            .input-group-append {
-                .btn {
-                    padding-right: 30px;
-                }
-            }
-        }
-
-        .btn-add-now {
-            background-color: #071c4d;
-            color: #fff;
-
-            &:hover {
-                background-color: #1b3b86;
-                color: #fff;
-            }
-        }
-    }
-
-    .card-right {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom: 0;
-    }
-
-    .features {
-        margin-top: 20px;
-
-        h3 {
-            font-size: 18px;
-            color: #071c4d;
-            margin-bottom: 0;
-        }
-
-        p {
-            margin-bottom: 0;
-        }
-
-        .description {
-            margin-left: 10px;
-            overflow: hidden;
-            float: left;
-        }
-
-        .features-image {
-            width: 45px;
-            height: 45px;
-            float: left;
         }
     }
 
