@@ -371,93 +371,85 @@
 
 <!--partner-->
 <section class="section-partners" id="partners">
-    <div class="container-fluid align-self-center">
-        <div class="row">
-            <div class="col-5">
-                <div class="inside">
-                    <h1>Begin Your International </br> Hospitality Career</h1>
-                        <span class="section-seaeducation-line"></span>
-                    <p>
-                        You also have the opportunity to build a career </br> in your dream company
-                        and Travel the World
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-3">
-                <div class="card partners-card shadow">
-                    <div class="card-body ">
-                        <p class="badge rounded-pill bg-color"></p>
-                        <h1 class="title">90</h1>
-                            <h3 class="card-week">
-                                Perusahaan Rekanan </h3>
-                            <p class="card-text">
-                                Bekerjasama dengan Hotel & Agency terbaik di Indonesia.
-                            </p>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="partner-card">
+                            <h1 class="card-head-title">Begin Your International Career</h1>
+                            <p>Grab the opportunity to build a career </br> in your dream company
+                                and Travel the World</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 col-3">
-                <div class="card partners-card shadow">
-                    <div class="card-body ">
-                        <p class="badge rounded-pill bg-color"></p>
-                        <h1 class="title">371</h1>
-                            <h3 class="card-week">
-                                Alumi Terbaik </h3>
-                            <p class="card-text">
-                                menghasilkan alumni yang dengan kemampuan mempuni
-                            </p>
+                <div class="partner col-sm-3 col-12">
+                    <div class="card shadow">
+                        <h1 class="title">90</h1>
+                        <h5 class="card-title">Partner Companies</h5>
+                        <p class="card-text">
+                            Cooperating with the best Hotels & Agency in Indonesia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="partner col-sm-3 col-12">
+                    <div class="card shadow">
+                        <h1 class="title">490</h1>
+                        <h5 class="card-title">Best Graduate</h5>
+                        <p class="card-text">
+                            produce graduates with qualified abilities who work in international hotels and cruise ships
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
 
-        <div class="partner my-4">
-            <div class="container-fluid">
+<section class="kenapakapalpesiar">
+    <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/polonia.jpg') }}" class="img-patner" />
                         </div>
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/jambuluwuk.png') }}" class="img-patner" />
                         </div>
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/cambridge.jpg') }}" class="img-patner" />
                         </div>
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/aston.jpg') }}" class="img-patner" />
                         </div>
                     </div>
-                    <div class="col-lg-2 col-3">
+                    <div class="col-lg-3 col-3">
                         <div class="partner-item">
-                            <img src="{{ url('frontend/assets/trans-hotel.jpg') }}" class="img-patner" />
+                            <img src="{{ url('frontend/assets/trans-hotel.png') }}" class="img-patner" />
                         </div>
                     </div>
                 </div>

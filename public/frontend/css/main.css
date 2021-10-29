@@ -241,18 +241,26 @@ a.nav-link {
   color: #071c4d;
 }
 
-.section-partners .inside {
-  padding: 30px;
+.section-partners .partner .card {
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  border-radius: 10px;
 }
 
 .section-partners h1 {
   font: "Open Sans", serif;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section-partners h5 {
+  font-size: 22px;
   font-weight: bold;
 }
 
 .section-partners p {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .section-partners .section-seaeducation-line {
@@ -264,7 +272,7 @@ a.nav-link {
 }
 
 .section-partners .partners-card {
-  padding: 15px;
+  padding: 20px;
   border-radius: 16px;
   background: #fff;
   margin-bottom: 10px;
@@ -278,8 +286,8 @@ a.nav-link {
 
 .section-partners .partner-item img.img-patner {
   image-resolution: 300px;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding: 20px;
