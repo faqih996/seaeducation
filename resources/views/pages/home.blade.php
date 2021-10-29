@@ -379,7 +379,7 @@
                             <p>Grab the opportunity to build a career </br> in your dream company
                                 and Travel the World</p>
                     </div>
-                </div>
+                </div>s`
 
                 <div class="partner col-sm-3 col-12">
                     <div class="card shadow">
@@ -407,7 +407,7 @@
 
 
 <section class="kenapakapalpesiar">
-    <div class="container-fluid">
+    <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-3">
                         <div class="partner-item">
@@ -427,11 +427,11 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-3">
+                    {{-- <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/polonia.jpg') }}" class="img-patner" />
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/jambuluwuk.png') }}" class="img-patner" />
@@ -442,7 +442,7 @@
                             <img src="{{ url('frontend/assets/cambridge.jpg') }}" class="img-patner" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-3">
+                    {{-- <div class="col-lg-3 col-3">
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/aston.jpg') }}" class="img-patner" />
                         </div>
@@ -451,7 +451,7 @@
                         <div class="partner-item">
                             <img src="{{ url('frontend/assets/trans-hotel.png') }}" class="img-patner" />
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

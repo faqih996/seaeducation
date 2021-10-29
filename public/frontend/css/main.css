@@ -286,12 +286,12 @@ a.nav-link {
 
 .section-partners .partner-item img.img-patner {
   image-resolution: 300px;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: 20px;
-  margin: 20px;
+  padding: 10;
+  margin: 10px;
 }
 
 .section-lecturers {
