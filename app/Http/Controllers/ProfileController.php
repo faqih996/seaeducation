@@ -20,7 +20,12 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.profile.index',[
+            'experiences' => Experience::all(),
+            'education' => Education::all(),
+            'batch' => Batch::all(),
+            'department' => Department::all()
+        ]);
     }
 
     /**
@@ -30,7 +35,7 @@ class ProfileController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -41,7 +46,7 @@ class ProfileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -63,7 +68,7 @@ class ProfileController extends Controller
      */
     public function edit(Profile $profile)
     {
-        //
+       
     }
 
     /**
@@ -75,7 +80,7 @@ class ProfileController extends Controller
      */
     public function update(Request $request, Profile $profile)
     {
-        //
+       
     }
 
     /**

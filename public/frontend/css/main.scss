@@ -664,6 +664,10 @@ a.nav-link {
     }
 
     ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         li {
             color: #e68b03;
             size: 24px;
@@ -677,6 +681,17 @@ a.nav-link {
                 font: 24px bold;
             }
         }
+    }
+
+    section.col.img-kanan-program.d-none.d-sm-block.d-sm-none.d-md-block {
+        padding-top: 99 px;
+    }
+
+    img.image-right {
+        height: 508px;
+        position: absolute;
+        margin-top: 136px;
+        margin-left: -100px;
     }
 
     .gallery {
@@ -719,6 +734,10 @@ a.nav-link {
     }
 }
 
+.overview-section {
+    background-color: #ff9e53;
+    color: black;
+}
 @media only screen and (max-width: 768px) {
     .btn-login,
     .btn-secondary {

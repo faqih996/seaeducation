@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Experience;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ExperienceController extends Controller
 {
@@ -12,9 +13,9 @@ class ExperienceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+        public function index(request $request)
     {
-        //
+        
     }
 
     /**
@@ -24,7 +25,9 @@ class ExperienceController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.profile.create',[
+            
+        ]);
     }
 
     /**
@@ -35,51 +38,78 @@ class ExperienceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:225',
+            'status' => 'required|max:225',
+
+        ]);
+
+        $validatedData['name'] = $request->name;
+        $validatedData['status'] = $request->status;
+        $validatedData['slug'] = Str::slug($request->name);
+
+
+
+        //hash password
+
+        Experience::insert($validatedData);
+
+        //$request->session()->flash('success', 'Registrasi berhasil! Silahkan Login');
+        return redirect('/profile')->with('success', 'Experience Has Been Added!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Experience  $experience
+     * @param  \App\Models\Experience  $department
      * @return \Illuminate\Http\Response
      */
-    public function show(Experience $experience)
+    public function show(Request $department)
     {
-        //
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Experience  $experience
+     * @param  \App\Models\Experience  $department
      * @return \Illuminate\Http\Response
      */
-    public function edit(Experience $experience)
+    public function edit($id)
     {
-        //
+        $item = Experience::findOrFail($id);
+
+        return view('pages.admin.department.edit',[
+            'item' => $item
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Experience  $experience
+     * @param  \App\Models\Experience  $department
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Experience $experience)
+    public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+
+        $data['slug'] = Str::slug($request->name);
+        $item = Experience::find($id)->update($data);
+
+        return redirect('/profile')->with('success', 'Experience Has Been Added!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Experience  $experience
+     * @param  \App\Models\Experience  $department
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Experience $experience)
+    public function destroy(Experience $item)
     {
-        //
+            Experience::destroy($item->id);
+            return redirect('/profile')->with('success', 'Experience Has Been Deleted!');
     }
 }

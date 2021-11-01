@@ -5,29 +5,30 @@
     <section class="section-program-details">
         <div class="container">
             <div class="row">
-            <section class="col kiri align-self-center">
+                <section class="col kiri align-self-center">
                 <!--kiri-->
-                <div class="text-md-left my-5">
-                <h1 class="mt-4">{{ $program->title }}</h1>
+                    <div class="text-md-left my-5">
+                        <h1 class="mt-4">{{ $program->title }}</h1>
 
-                @foreach($departments as $department)
-                    <ul class="mt-4">
-                        <li class="department-list"><a class="department-name" href="">{{ $department->name }}</a></li>
-                    </ul>
+                        @foreach($departments as $department)
+                            <ul class="mt-4">
 
-                @endforeach
+                                <li class="department-list"><a class="department-name" href="">{{ $department->name }}</a></li>
 
-                <div class="text-left my-5">
-                    <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-                    >Register Now</a
-                    >
-                </div>
-                </div>
-            </section>
+                            </ul>
+                        @endforeach
+
+                        <div class="text-left my-5">
+                            <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
+                            >Register Now</a>
+
+                        </div>
+                    </div>
+                </section>
 
             <!--kanan-->
-            <section class="col img-kanan d-none d-sm-block d-sm-none d-md-block">
-                <img src="" alt="" />
+            <section class="col img-kanan-program d-none d-sm-block d-sm-none d-md-block">
+                <img class="image-right" src="{{ url('frontend/assets/student.png') }}" alt="" />
             </section>
             </div>
         </div>

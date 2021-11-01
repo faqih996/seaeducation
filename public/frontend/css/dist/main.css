@@ -626,6 +626,12 @@ a.nav-link {
 .section-program-details h1 {
   font-size: 58px;
 }
+.section-program-details ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .section-program-details ul li {
   color: #e68b03;
   size: 24px;
@@ -637,6 +643,15 @@ a.nav-link {
   color: white;
   text-decoration: none;
   font: 24px bold;
+}
+.section-program-details section.col.img-kanan-program.d-none.d-sm-block.d-sm-none.d-md-block {
+  padding-top: 99 px;
+}
+.section-program-details img.image-right {
+  height: 508px;
+  position: absolute;
+  margin-top: 136px;
+  margin-left: -100px;
 }
 .section-program-details .gallery .xzoom-container {
   display: block;
@@ -665,6 +680,11 @@ a.nav-link {
 .section-program-details .btn-join-now:hover {
   background-color: #ffb57c;
   color: #fff;
+}
+
+.overview-section {
+  background-color: #ff9e53;
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {

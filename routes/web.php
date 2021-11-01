@@ -12,6 +12,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DetailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\BatchController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\ProgramAdminController;
@@ -49,12 +50,19 @@ Route::group(['middleware' => ['verified']],function(){
 
     Route::resource('/gallery', GalleryController::class);
 
-    Route::get('/proifle', [ProfileController::class,'index'])->name('proifle');
-    Route::get('/proifle/create', [ProfileController::class,'create']);
-    Route::post('/proifle/store', [ProfileController::class,'store']);
-    Route::get('/proifle/edit/{id}', [ProfileController::class,'edit']);
-    Route::post('/proifle/update/{id}', [ProfileController::class,'update']);
+    Route::get('/profile', [ProfileController::class,'index'])->name('profile');
 
+    Route::get('/profile', [ProfileController::class,'index'])->name('proifle');
+    Route::get('/profile/create', [ProfileController::class,'create']);
+    Route::post('/profile/store', [ProfileController::class,'store']);
+    Route::get('/profile/edit/{id}', [ProfileController::class,'edit']);
+    Route::post('/profile/update/{id}', [ProfileController::class,'update']);
+
+    Route::get('/profile', [ProfileController::class,'index'])->name('proifle');
+    Route::get('/profile/create', [ProfileController::class,'create']);
+    Route::post('/profile/store', [ProfileController::class,'store']);
+    Route::get('/profile/edit/{id}', [ProfileController::class,'edit']);
+    Route::post('/profile/update/{id}', [ProfileController::class,'update']);
 
     Route::get('/batch', [BatchController::class,'index'])->name('batch');
     Route::get('/batch/create', [BatchController::class,'create']);
