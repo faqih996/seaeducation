@@ -4,6 +4,7 @@
 use App\models\Post;
 use App\models\Admin\Program;
 use App\Models\Batch;
+use App\Models\checkout;
 
 /* belajar di wpu
 use App\Http\Controllers\RegisterController;
@@ -19,6 +20,7 @@ use App\Http\Controllers\Admin\ProgramAdminController;
 use App\Http\Controllers\Admin\MasterController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\CheckoutController;
 
 
 
@@ -46,10 +48,11 @@ Route::get('/program/kurikulum/{program:slug}', [ProgramController::class,'show'
 Route::group(['middleware' => ['verified']],function(){
     Route::get('/dashboard', [DashboardController::class,'index'])->name('Dashboard');
 
+    Route::get('/checkout/', [CheckoutController::class, 'create'])->name('Checkout');
+
     Route::get('/master', [MasterController::class,'index'])->name('Master');
 
     Route::resource('/gallery', GalleryController::class);
-
     Route::get('/profile', [ProfileController::class,'index'])->name('profile');
 
     Route::get('/profile', [ProfileController::class,'index'])->name('proifle');

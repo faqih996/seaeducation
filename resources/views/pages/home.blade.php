@@ -42,7 +42,7 @@
 <!--kenapa kapal pesiar-->
 <section class="kenapakapalpesiar">
   <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-8 py-5">
         <div class="col-md-6 col-lg-4" data-aos="fade-up">
               <div class="card service-card">
                 <div class="card-body">
@@ -150,8 +150,8 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-2 col-12">
-      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
+    <div class="col-lg-3 col-12">
+      <div class="card seaedu-card shadow p-2 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/mentor.png') }}" alt="" />
         </div>
@@ -164,8 +164,8 @@
       </div>
     </div>
 
-    <div class="col-lg-2 col-12">
-      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
+    <div class="col-lg-3 col-12">
+      <div class="card seaedu-card shadow p-2 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/consultancy.png') }}" alt="" />
         </div>
@@ -178,22 +178,22 @@
       </div>
     </div>
 
-    <div class="col-lg-2 col-12">
-      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
+    <div class="col-lg-3 col-12">
+      <div class="card seaedu-card shadow p-2 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/certificate.png') }}" alt="" />
         </div>
         <div class="card-body">
-          <h5 class="card-seaedu-title">Bersertifikat Resmi</h5>
+          <h5 class="card-seaedu-title">Certified</h5>
           <p class="card-seatext">
-            Selesaikan program pendidikan dan dapatkan sertifikat dari kami
+            Complete the education program and get a certificate from us
           </p>
         </div>
       </div>
     </div>
 
-    <div class="col-lg-2 col-12">
-      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
+    <div class="col-lg-3 col-12">
+      <div class="card seaedu-card shadow p-2 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/training.png') }}" alt="" />
         </div>
@@ -206,8 +206,8 @@
       </div>
     </div>
 
-    <div class="col-lg-2 col-12">
-      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
+    <div class="col-lg-3 col-12">
+      <div class="card seaedu-card shadow p-2 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/hiring.png') }}" alt="" />
         </div>
@@ -220,8 +220,8 @@
       </div>
     </div>
 
-    <div class="col-lg-2 col-12">
-      <div class="card seaedu-card shadow p-3 mb-5 bg-body">
+    <div class="col-lg-3 col-12">
+      <div class="card seaedu-card shadow p-2 mb-5 bg-body">
         <div class="seaedu-card__img">
           <img src="{{ url('frontend/assets/document.png') }}" alt="" />
         </div>
@@ -259,8 +259,8 @@
                         alt=""
                         class="mb-4 rounded-circle"
                     />
-                    <h2 class="title ">
-                    Monica Alifiah</h2>
+                    <h3 class="title ">
+                    Monica Alifiah</h3>
                     <h5>Mandarin Mentor</h5>
                     <p class="capt mt-3 text-left">
                         "Belajar Mandarin itu seru!
@@ -277,11 +277,11 @@
                         alt=""
                         class="mb-4 rounded-circle"
                     />
-                    <h2 class="title ">
-                    Nurmansyah</h2>
+                    <h3 class="title ">
+                    Nurmansyah</h3>
                     <h5>Housekeeping Mentor</h5>
                     <p class="capt mt-3 text-left">
-                        "Bekerja dikapal pesiar merupakan hal yang sangat fantastis dan berkesan untuk saya, bertemu dan bekerja dengan teman dari berbagai negara membuat saya memiliki banyak cerita berharga<br class="desktop"><br> Navigate Your Future Right Now"</p>
+                        "Bekerja dikapal pesiar merupakan hal yang sangat fantastis dan berkesan untuk saya, bertemu dan bekerja dengan teman dari berbagai negara membuat saya memiliki banyak cerita berharga<br class="desktop"><br><br> Navigate Your Future Right Now"</p>
                 </div>
             </div>
 
@@ -294,8 +294,8 @@
                         alt=""
                         class="mb-4 rounded-circle"
                     />
-                    <h2 class="title ">
-                    Stephen Gonnella</h2>
+                    <h3 class="title ">
+                    Stephen Gonnella</h3>
                     <h5>Native English Mentor</h5>
                     <p class="capt mt-3 text-left">
                         " I Having studied languages and applied linguistics at university, I value the role languages play in bridging people beyond our shores. I look forward to helping you make your career goals a reality.
@@ -313,8 +313,8 @@
                         alt=""
                         class="mb-4 rounded-circle"
                     />
-                    <h2 class="title ">
-                    Ari Wibisono</h2>
+                    <h3 class="title ">
+                    Ari Wibisono</h3>
                     <h5>FnB Service Mentor</h5>
                     <p class="capt mt-3 text-left">
                         "Bekerja dikapal pesiar merupakan salah satu impian yang berhasil saya capai,  bertemu dengan orang-orang baru dan tempat-tempat menakjubkan.
@@ -371,32 +371,32 @@
 
 <!--partner-->
 <section class="section-partners" id="partners">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row mt-5">
-            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="col-md-6 ml-lg-5 col-lg-4" data-aos="fade-up">
                     <div class="partner-card">
                             <h1 class="card-head-title">Begin Your International Career</h1>
                             <p>Grab the opportunity to build a career </br> in your dream company
                                 and Travel the World</p>
                     </div>
-                </div>s`
+                </div>
 
-                <div class="partner col-sm-3 col-12">
+                <div class="partner ml-lg-5 col-lg-3 col-12">
                     <div class="card shadow">
                         <h1 class="title">90</h1>
                         <h5 class="card-title">Partner Companies</h5>
                         <p class="card-text">
-                            Cooperating with the best Hotels & Agency in Indonesia.
+                            Cooperating with the best Hotels & Agencies in Indonesia & International.
                         </p>
                     </div>
                 </div>
 
-                <div class="partner col-sm-3 col-12">
+                <div class="partner ml-lg-5 col-lg-3 col-12">
                     <div class="card shadow">
                         <h1 class="title">490</h1>
                         <h5 class="card-title">Best Graduate</h5>
                         <p class="card-text">
-                            produce graduates with qualified abilities who work in international hotels and cruise ships
+                            with qualified abilities who work in international hotels and cruise ships
                         </p>
                     </div>
                 </div>
@@ -409,20 +409,20 @@
 <section class="kenapakapalpesiar">
     <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-3">
-                        <div class="partner-item">
+                    <div class="col-lg-3 col-12">
+                        <div class="partner-item text-center">
                             <img src="{{ url('frontend/assets/logosas@2x.png') }}" class="img-patner"  />
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-3">
-                        <div class="partner-item">
+                    <div class="col-lg-3 col-12">
+                        <div class="partner-item text-center">
                             <img src="{{ url('frontend/assets/LMjkt@2x.png') }}" class="img-patner" />
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-3">
-                        <div class="partner-item">
+                    <div class="col-lg-3 col-12">
+                        <div class="partner-item text-center">
                             <img src="{{ url('frontend/assets/sedayu@2x.png') }}" class="img-patner" />
                         </div>
                     </div>
@@ -432,13 +432,13 @@
                             <img src="{{ url('frontend/assets/polonia.jpg') }}" class="img-patner" />
                         </div>
                     </div> --}}
-                    <div class="col-lg-3 col-3">
-                        <div class="partner-item">
+                    <div class="col-lg-3 col-12">
+                        <div class="partner-item text-center">
                             <img src="{{ url('frontend/assets/jambuluwuk.png') }}" class="img-patner" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-3">
-                        <div class="partner-item">
+                    <div class="col-lg-3 col-12">
+                        <div class="partner-item text-center">
                             <img src="{{ url('frontend/assets/cambridge.jpg') }}" class="img-patner" />
                         </div>
                     </div>
@@ -458,6 +458,8 @@
     </div>
 </section>
 <!--partnerend-->
+
+
 
 <!--testimoni-->
 <section class="testimonial">
@@ -690,7 +692,7 @@
         <div class="tc-pagination"></div>
     </div>
 </section>
-<!--testimoniend-->
+
 
 
 <!--daftarsekarang-->
@@ -698,12 +700,9 @@
     <div class="text-align-center">
         <h3>Siap Kemudikan Masa Depanmu?</h3>
         <a class="btn btn-register-now" href="{{ url('register') }}" role="button"
-          >Register Now</a
-            >
+          >Register Now</a>
     </div>
 </section>
 <!--daftarsekarang end-->
-
-
 
 @endsection
