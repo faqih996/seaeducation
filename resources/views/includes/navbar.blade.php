@@ -37,8 +37,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item align-self-center">
-            <a class="nav-link " href=""
-              >Office <span class="sr-only"></span
+            <a class="nav-link " href="{{ url('about') }}"
+              >About <span class="sr-only"></span
             ></a>
           </li>
           <li class="nav-item align-self-center">

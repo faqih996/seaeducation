@@ -2,8 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\checkoutModel;
+use App\Http\Controllers\Controller;
+use App\Models\Checkout;
 use Illuminate\Http\Request;
+use App\Http\Requests\User\Checkout\Store;
+use App\Models\Program;
+use Auth;
+use Mail;
+use App\Mail\Checkout\AfterCheckout;
 
 class CheckoutController extends Controller
 {
@@ -14,7 +20,7 @@ class CheckoutController extends Controller
      */
     public function index()
     {
-        
+        //
     }
 
     /**
@@ -22,10 +28,14 @@ class CheckoutController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Program $camp, Request $request)
     {
-        return view('pages.checkout',[
-
+        if ($program->isRegistered) {
+            $request->session()->flash('error', "You already registered on {$camp->title} camp.");
+            return redirect(route('user.dashboard'));
+        }
+        return view('checkout.create', [
+            'programs' => $program
         ]);
     }
 
@@ -35,18 +45,36 @@ class CheckoutController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Store $request, Program $camp)
     {
-        //
+        // mapping request data
+        $data = $request->all();
+        $data['user_id'] = Auth::id();
+        $data['program_id'] = $program->id;
+
+        // update user data
+        $user = Auth::user();
+        $user->email = $data['email'];
+        $user->name = $data['name'];
+        $user->occupation = $data['occupation'];
+        $user->save();
+
+        // create checkout
+        $checkout = Checkout::create($data);
+
+        // sending email
+        Mail::to(Auth::user()->email)->send(new AfterCheckout($checkout));
+
+        return redirect(route('checkout.success'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\checkoutModel  $checkoutModel
+     * @param  \App\Models\Checkout  $checkout
      * @return \Illuminate\Http\Response
      */
-    public function show(checkoutModel $checkoutModel)
+    public function show(Checkout $checkout)
     {
         //
     }
@@ -54,10 +82,10 @@ class CheckoutController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\checkoutModel  $checkoutModel
+     * @param  \App\Models\Checkout  $checkout
      * @return \Illuminate\Http\Response
      */
-    public function edit(checkoutModel $checkoutModel)
+    public function edit(Checkout $checkout)
     {
         //
     }
@@ -66,10 +94,10 @@ class CheckoutController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\checkoutModel  $checkoutModel
+     * @param  \App\Models\Checkout  $checkout
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, checkoutModel $checkoutModel)
+    public function update(Request $request, Checkout $checkout)
     {
         //
     }
@@ -77,11 +105,16 @@ class CheckoutController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\checkoutModel  $checkoutModel
+     * @param  \App\Models\Checkout  $checkout
      * @return \Illuminate\Http\Response
      */
-    public function destroy(checkoutModel $checkoutModel)
+    public function destroy(Checkout $checkout)
     {
         //
+    }
+
+    public function success()
+    {
+        return view('checkout.success');
     }
 }

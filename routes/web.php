@@ -13,6 +13,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DetailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\BatchController;
 use App\Http\Controllers\Admin\DepartmentController;
@@ -42,6 +43,7 @@ use PHPUnit\Framework\Constraint\RegularExpression;
 Auth::routes(['verify' => true]);
 
 Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/about', [AboutController::class,'index'])->name('about');
 Route::get('/program', [ProgramController::class,'index'])->name('program');
 Route::get('/program/kurikulum/{program:slug}', [ProgramController::class,'show']);
 
@@ -51,6 +53,10 @@ Route::group(['middleware' => ['verified']],function(){
     Route::get('/checkout/', [CheckoutController::class, 'create'])->name('Checkout');
 
     Route::get('/master', [MasterController::class,'index'])->name('Master');
+
+     Route::get('checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
+    Route::get('checkout/{program:slug}', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::post('checkout/{program}', [CheckoutController::class, 'store'])->name('checkout.store');
 
     Route::resource('/gallery', GalleryController::class);
     Route::get('/profile', [ProfileController::class,'index'])->name('profile');

@@ -356,7 +356,7 @@
                                 </p>
                             <div class="button-group justify-content-center ">
                                 <a href="{{ url('program/kurikulum', $program->slug) }}" class="button button-outline-primary text-decoration-none btn-sm">Kurikulum</button>
-                                <a href="" class="button button-primary btn-sm">Daftar</a>
+                                <a href="{{ url('checkout/', $program->slug) }}" class="button button-primary btn-sm">Daftar</a>
                             </div>
                         </div>
                     </div>
