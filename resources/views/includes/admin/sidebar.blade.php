@@ -124,11 +124,13 @@
                             <path d="M12.9033 2.41406V12.4141" stroke="#7E8CAC" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                        <form action="/logout" method="post" text-decoration-none>
-                        <p class="item-title m-0 text-decoration-none">
-                            @csrf
-                            <button href="" class="text-lg text-decoration-none border-0" background="none" type="submit" role="button">Log Out</button>
-                        </p>
+                       <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                               Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                             @csrf
                         </form>
                     </div>
                 </div>

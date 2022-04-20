@@ -335,7 +335,7 @@
         </h1>
         <span class="section-seaeducation-line"></span>
 
-        <div class="row">
+        {{-- <div class="row">
             @foreach($programs as $program)
             <div class="col-lg-4 col-12">
                 <div class="item">
@@ -363,7 +363,7 @@
                 </div>
             </div>
             @endforeach
-        </div>
+        </div> --}}
     </div>
 </section>
 <!--programend-->

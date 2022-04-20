@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section class="overview overflow-auto">
+<section class="overflow-auto overview">
         <main class="main-wrapper">
             <div class="ps-lg-0">
                 <h2 class="text-4xl fw-bold color-palette-1 mb-30">Add New Department</h2>
@@ -12,7 +12,7 @@
                     <div class="main-content">
 
 
-                    <div class="card shadow mb-4">
+                    <div class="mb-4 shadow card">
                         <div class="card-body">
 
                             <form action="/department/store" method="post">

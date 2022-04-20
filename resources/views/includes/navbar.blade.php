@@ -42,7 +42,7 @@
             ></a>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link " href="{{ url('program') }}" >Program</a>
+            {{-- <a class="nav-link " href="{{ url('program') }}" >Program</a> --}}
           </li>
           </li>
 
