@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +17,6 @@
     padding-left: 40px;
   }
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container-fluid {
@@ -26,7 +24,6 @@
     padding-left: 70px;
   }
 }
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container-fluid {
@@ -34,13 +31,11 @@
     padding-left: 100px;
   }
 }
-
 @media (min-width: 1400px) {
   .container-xxl {
     max-width: 1420px;
   }
 }
-
 /*  */
 /* Padding */
 .pt-40 {
@@ -323,112 +318,142 @@
   .pe-md-25 {
     padding-right: 1.563rem;
   }
+
   .ps-md-25 {
     padding-left: 1.563rem;
   }
+
   .pt-md-50 {
     padding-top: 3.125rem !important;
   }
+
   .pb-md-50 {
     padding-bottom: 3.125rem;
   }
+
   .pb-md-15 {
     padding-bottom: 0.938rem;
   }
+
   .pt-md-15 {
     padding-top: 0.938rem;
   }
+
   .ps-md-15 {
     padding-left: 0.938rem;
   }
+
   .pe-md-15 {
     padding-right: 0.938rem;
   }
+
   .pb-md-145 {
     padding-bottom: 9.063rem;
   }
+
   .pt-md-100 {
     padding-top: 6.25rem;
   }
+
   .pt-md-179 {
     padding-top: 11.188rem;
   }
+
   .pb-md-179 {
     padding-bottom: 11.188rem;
   }
+
   .pt-md-145 {
     padding-top: 9.063rem;
   }
+
   .pb-md-212 {
     padding-bottom: 13.25rem;
   }
+
   /*  */
   /* Margin */
   .mb-md-10 {
     margin-bottom: 0.625rem !important;
   }
+
   /*  */
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* Padding */
   .pt-lg-100 {
     padding-top: 6.25rem;
   }
+
   .pb-lg-100 {
     padding-bottom: 6.25rem;
   }
+
   .pt-lg-227 {
     padding-top: 14.188rem;
   }
+
   .pb-lg-227 {
     padding-bottom: 14.188rem;
   }
+
   .pe-lg-60 {
     padding-right: 3.75rem;
   }
+
   .ps-lg-60 {
     padding-left: 3.75rem;
   }
+
   .pt-lg-60 {
     padding-top: 3.75rem;
   }
+
   .pt-lg-145 {
     padding-top: 9.063rem;
   }
+
   .pb-lg-145 {
     padding-bottom: 9.063rem;
   }
+
   .pt-lg-40 {
     padding-top: 2.5rem;
   }
+
   .pb-lg-40 {
     padding-bottom: 2.5rem;
   }
+
   .pt-lg-50 {
     padding-top: 3.125rem;
   }
+
   .pb-lg-50 {
     padding-bottom: 3.125rem;
   }
+
   /*  */
   /* Margin */
   .me-lg-35 {
     margin-right: 2.2rem;
   }
+
   .ms-lg-35 {
     margin-left: 2.2rem;
   }
+
   .me-lg-20 {
     margin-right: 1.25rem;
   }
+
   .ms-lg-40 {
     margin-left: 2.5rem;
   }
+
   /*  */
 }
-
 .h2 {
   font: "Assistant";
 }
@@ -444,35 +469,28 @@
   background-color: #1a3475;
 }
 
-.sign-in input[type="password"],
-.sign-in input[type="email"] {
+.sign-in input[type=password],
+.sign-in input[type=email] {
   border: 1px solid #1a3475;
   padding: 0.75rem 1.625rem;
   color: #1a3475;
 }
 
-.sign-in input[type="password"]:focus-within,
-.sign-in input[type="email"]:focus-within {
+.sign-in input[type=password]:focus-within,
+.sign-in input[type=email]:focus-within {
   color: #1a3475;
 }
 
-.sign-in input[type="password"]::-webkit-input-placeholder,
-.sign-in input[type="email"]::-webkit-input-placeholder {
+.sign-in input[type=password]::-moz-placeholder, .sign-in input[type=email]::-moz-placeholder {
   color: #ccd0dd;
 }
 
-.sign-in input[type="password"]:-ms-input-placeholder,
-.sign-in input[type="email"]:-ms-input-placeholder {
+.sign-in input[type=password]:-ms-input-placeholder, .sign-in input[type=email]:-ms-input-placeholder {
   color: #ccd0dd;
 }
 
-.sign-in input[type="password"]::-ms-input-placeholder,
-.sign-in input[type="email"]::-ms-input-placeholder {
-  color: #ccd0dd;
-}
-
-.sign-in input[type="password"]::placeholder,
-.sign-in input[type="email"]::placeholder {
+.sign-in input[type=password]::placeholder,
+.sign-in input[type=email]::placeholder {
   color: #ccd0dd;
 }
 
@@ -480,7 +498,6 @@
   padding: 0.75rem;
   background-color: #1a3475;
 }
-
 .sign-in .btn-sign-in:hover {
   background-color: #1c46ad;
 }
@@ -496,12 +513,11 @@
 
 @media (min-width: 992px) {
   .sign-in .container,
-  .sign-in input[type="password"],
-  .sign-in input[type="email"] {
+.sign-in input[type=password],
+.sign-in input[type=email] {
     max-width: 437px;
   }
 }
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container-fluid {
@@ -509,13 +525,10 @@
     padding-left: 100px;
   }
 }
-
 @media (min-width: 1400px) {
   .container-xxl {
     max-width: 1420px;
   }
 }
-
 /*  */
-/*  */
-/*# sourceMappingURL=style.css.map */
+/*  *//*# sourceMappingURL=style.css.map */
